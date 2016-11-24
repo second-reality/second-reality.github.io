@@ -1,0 +1,277 @@
+digraph {
+	node [shape=box]
+	1442 -> 1443
+	1442 [label="0x4000cbbd90
+_______________________
+_______________________
+pushq %r15
+pushq %r14
+pushq %r13
+pushq %r12
+pushq %rbp
+pushq %rbx
+movq %rdi, %rbp
+subq $0x48, %rsp
+movq 0x3230c0(%rip), %rax
+testq %rsi, %rsi
+movq 0x18(%rax), %r14
+je 0x4000cbc060"]
+	1443 -> 1444
+	1443 [label="0x4000cbbdb5
+_______________________
+_______________________
+cmpq %rdi, 0x3233b4(%rip)
+movq %rsi, %rbx
+jbe 0x4000cbbf50"]
+	1444 -> 1445
+	1444 [label="0x4000cbbdc5
+_______________________
+_______________________
+movb $0, 0x18(%rsp)
+leaq 0x58(%rbx), %rax
+movq %rax, 8(%rsp)
+movq %r14, %rax
+negq %rax
+movq %rax, %rdi
+movq %rax, 0x10(%rsp)
+leaq 7(%r14, %rbp), %rax
+andq %rdi, %rax
+movq %rax, 0x28(%rsp)
+movq 0x58(%rbx), %r13
+movq 8(%r13), %rax
+movq %rax, %r12
+andq $0xfffffff8, %r12
+testq %r12, %r12
+leaq (%r13, %r12), %r10
+setne %r11b
+cmpq 8(%rsp), %r13
+jne 0x4000cbbf10"]
+	1445 -> 1446
+	1445 [label="0x4000cbbe14
+_______________________
+_______________________
+testb %r11b, %r11b
+jne 0x4000cbbf10"]
+	1446 -> 1447
+	1446 [label="0x4000cbbe1d
+_______________________
+_______________________
+leaq 0x20(%rbp), %r15
+cmpq %r15, %r12
+jae 0x4000cbc595"]
+	1447 -> 1448
+	1447 [label="0x4000cbbe2a
+_______________________
+_______________________
+leaq 0x323ccf(%rip), %rax
+cmpq %rax, %rbx
+je 0x4000cbc110"]
+	1448 -> 1449
+	1448 [label="0x4000cbc110
+_______________________
+_______________________
+movq 0x323051(%rip), %rax
+leaq 0x20(%rbp, %rax), %rcx
+leaq -1(%r14), %rax
+negq %r14
+testb $2, 4(%rbx)
+movq %r14, 0x10(%rsp)
+movq %rax, 8(%rsp)
+jne 0x4000cbc270"]
+	1449 -> 1450
+	1449 [label="0x4000cbc137
+_______________________
+_______________________
+subq %r12, %rcx
+addq %rax, %rcx
+andq %r14, %rcx
+testq %rcx, %rcx
+movq %rcx, %r14
+jle 0x4000cbc510"]
+	1450 -> 1468
+	1450 [label="0x4000cbc14c
+_______________________
+_______________________
+movq 0x322c75(%rip), %rax
+movb %r11b, 0x28(%rsp)
+movq %rcx, %rdi
+movq %r10, 0x20(%rsp)
+movq %rcx, 0x18(%rsp)
+callq *(%rax)
+_______________________
+CALL __default_morecore"]
+	1468 -> 1469
+	1468 [label="0x4000cbc167
+_______________________
+_______________________
+testq %rax, %rax
+movq %rax, %rdx
+movq 0x18(%rsp), %rcx
+movq 0x20(%rsp), %r10
+movzbl 0x28(%rsp), %r11d
+je 0x4000cbc4fa"]
+	1469 -> 1470
+	1469 [label="0x4000cbc4fa
+_______________________
+_______________________
+testb $2, 0x323603(%rip)
+jne 0x4000cbc282"]
+	1470 -> 1471
+	1470 [label="0x4000cbc507
+_______________________
+_______________________
+nopw (%rax, %rax)
+movq 8(%rsp), %rax
+leaq (%r12, %rax), %r14
+addq %rcx, %r14
+andq 0x10(%rsp), %r14
+jmp 0x4000cbc282"]
+	1471 -> 1472
+	1471 [label="0x4000cbc282
+_______________________
+_______________________
+cmpq $0xfffff, %r14
+movq %r14, 0x18(%rsp)
+ja 0x4000cbc29f"]
+	1472 -> 1473
+	1472 [label="0x4000cbc290
+_______________________
+_______________________
+movq $0x100000, 0x18(%rsp)
+movl $0x100000, %r14d
+cmpq 0x18(%rsp), %rbp
+jae 0x4000cbc430"]
+	1473 -> 1479
+	1473 [label="0x4000cbc2aa
+_______________________
+_______________________
+movq 0x18(%rsp), %rsi
+xorl %r9d, %r9d
+movl $3, %edx
+xorl %edi, %edi
+movl $0xffffffff, %r8d
+movl $0x22, %ecx
+movb %r11b, 0x28(%rsp)
+movq %r10, 0x20(%rsp)
+callq 0x4000d29f60
+_______________________
+CALL mmap64"]
+	1479 -> 1480
+	1479 [label="0x4000cbc2d3
+_______________________
+_______________________
+cmpq $0xff, %rax
+movq %rax, %rdx
+movq 0x20(%rsp), %r10
+movzbl 0x28(%rsp), %r11d
+je 0x4000cbc430"]
+	1480 -> 1481
+	1480 [label="0x4000cbc2eb
+_______________________
+_______________________
+orl $2, 0x323812(%rip)
+testq %rax, %rax
+je 0x4000cbc430"]
+	1481 -> 1482
+	1481 [label="0x4000cbc2fb
+_______________________
+_______________________
+movq 0x18(%rsp), %rax
+addq %rdx, %rax
+sete %dil
+jmp 0x4000cbc19d"]
+	1482 -> 1483
+	1482 [label="0x4000cbc19d
+_______________________
+_______________________
+cmpq $0, 0x323003(%rip)
+je 0x4000cbc4b0"]
+	1483 -> 1484
+	1483 [label="0x4000cbc4b0
+_______________________
+_______________________
+movq %rdx, 0x322cf1(%rip)
+jmp 0x4000cbc1ab"]
+	1484 -> 1485
+	1484 [label="0x4000cbc1ab
+_______________________
+_______________________
+movq %r14, %rsi
+addq 0x3241cb(%rip), %rsi
+cmpq %rdx, %r10
+movq %rsi, 0x3241c1(%rip)
+jne 0x4000cbc310"]
+	1485 -> 1486
+	1485 [label="0x4000cbc310
+_______________________
+_______________________
+testb $2, 0x3237ed(%rip)
+jne 0x4000cbc460"]
+	1486 -> 1487
+	1486 [label="0x4000cbc460
+_______________________
+_______________________
+testb $0xf, %dl
+jne 0x4000cbc646"]
+	1487 -> 1488
+	1487 [label="0x4000cbc469
+_______________________
+_______________________
+xorl %r14d, %r14d
+xorl %r9d, %r9d
+testq %rax, %rax
+jne 0x4000cbc3c5"]
+	1488 -> 1489
+	1488 [label="0x4000cbc3c5
+_______________________
+_______________________
+subq %rdx, %rax
+addq %r14, %rsi
+movq %rdx, 0x323786(%rip)
+addq %r9, %rax
+orq $1, %rax
+testq %r12, %r12
+movq %rax, 8(%rdx)
+movq %rsi, 0x323f99(%rip)
+je 0x4000cbbea7"]
+	1489 -> 1490
+	1489 [label="0x4000cbbea7
+_______________________
+_______________________
+cmpq %rsi, 0x888(%rbx)
+jae 0x4000cbbeb7"]
+	1490 -> 1491
+	1490 [label="0x4000cbbeb0
+_______________________
+_______________________
+movq %rsi, 0x888(%rbx)
+movq 8(%rdx), %rax
+andq $0xfffffff8, %rax
+cmpq %rax, %r15
+ja 0x4000cbc220"]
+	1491 [label="0x4000cbbec8
+_______________________
+_______________________
+leaq 0x323c31(%rip), %rdi
+subq %rbp, %rax
+xorl %ecx, %ecx
+leaq (%rdx, %rbp), %rsi
+cmpq %rdi, %rbx
+setne %cl
+orq $1, %rbp
+orq $1, %rax
+shlq $2, %rcx
+movq %rsi, 0x58(%rbx)
+orq %rcx, %rbp
+movq %rbp, 8(%rdx)
+movq %rax, 8(%rsi)
+leaq 0x10(%rdx), %rax
+addq $0x48, %rsp
+popq %rbx
+popq %rbp
+popq %r12
+popq %r13
+popq %r14
+popq %r15
+retq "]
+}

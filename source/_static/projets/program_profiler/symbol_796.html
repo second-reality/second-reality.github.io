@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Symbol</title>
+        <script src="./ext/js/jquery.min.js"></script>
+        <script src="./ext/datatables/datatables.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="./ext/datatables/datatables.min.css">
+        <script src="./ext/js/svg-pan-zoom.min.js"></script>
+    </head>
+    <body>
+        <style>
+/* avoid spacing in table row with <pre> */
+pre
+{
+    display: inline;
+}
+        </style>
+<a href="index.html">Back to index</a> |
+<a href="symbol_796.html.cfg.dot.txt">control flow graph dot source</a> |
+<a href="symbol_796.html.cfg.dot.txt.svg">control flow graph</a>
+
+<div>
+    <div style="float:left;max-width:40%;">
+        <p>name: brk</p>
+        <p>pc: 0x4000d264b0</p>
+        <p>size: 100</p>
+        <p>file: /usr/lib/x86_64-linux-gnu/libc-2.25.so</p>
+        <p>src: </p>
+        <p>number of times called: 2</p>
+        <p>instructions_executed: 27 (0.0%)</p>
+        <p>instructions_executed_control: 8 (29.63%)</p>
+        <p>instructions_executed_arithmetic_and_logic: 13 (48.15%)</p>
+        <p>instructions_executed_memory: 6 (22.22%)</p>
+        <p>bytes_read: 40 (0.0%)</p>
+        <p>bytes_written: 20 (0.0%)</p>
+        <p>instructions_executed_cumulated: 27 (0.0%)</p>
+        <p>bytes_read_cumulated: 40 (0.0%)</p>
+        <p>bytes_written_cumulated: 20 (0.0%)</p>
+        <p>
+        was called by:
+        <ul>
+            
+            <li><a href="symbol_319.html">__sbrk</a></li>
+            
+        </ul>
+        </p>
+        <p>
+        calls:
+        <ul>
+            
+        </ul>
+        </p>
+    </div>
+    <div style="overflow: hidden;height:75vh;" class="svg_div svg_pan">symbol_796.html.cfg.dot.txt.svg</div>
+</div>
+
+<div style="clear:both;"/>
+
+    <div style="float:right;width:64%;">
+        <table class="dyn_table display compact">
+            <thead>
+                <tr>
+                    <th>File</th>
+                    <th>Line</th>
+                    <th>Src</th>
+                    <th>Executed</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </table>
+    </div>
+
+    <div style="float:left;width:35%;">
+        <table class="dyn_table display compact">
+            <thead>
+                <tr>
+                    <th>Pc</th>
+                    <th>Asm</th>
+                    <th>Executed</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr>
+                    <td>0x4000d264b0</td>
+                    <td class="code"><pre><code>movl $0xc, %ecx</code></pre></td>
+                        <td>True</td>
+                </tr>
+                
+                <tr>
+                    <td>0x4000d264b5</td>
+                    <td class="code"><pre><code>movl %ecx, %eax</code></pre></td>
+                        <td>True</td>
+                </tr>
+                
+                <tr>
+                    <td>0x4000d264b7</td>
+                    <td class="code"><pre><code>syscall </code></pre></td>
+                        <td>True</td>
+                </tr>
+                
+                <tr>
+                    <td>0x4000d264b9</td>
+                    <td class="code"><pre><code>cmpq $-0x1000, %rax</code></pre></td>
+                        <td>True</td>
+                </tr>
+                
+                <tr>
+                    <td>0x4000d264bf</td>
+                    <td class="code"><pre><code>movq %rax, %rdx</code></pre></td>
+                        <td>True</td>
+                </tr>
+                
+                <tr>
+                    <td>0x4000d264c2</td>
+                    <td class="code"><pre><code>ja 0x4000d264e0</code></pre></td>
+                        <td>True</td>
+                </tr>
+                
+                <tr>
+                    <td>0x4000d264c4</td>
+                    <td class="code"><pre><code>movq 0x2b89fd(%rip), %rax</code></pre></td>
+                        <td>True</td>
+                </tr>
+                
+                <tr>
+                    <td>0x4000d264cb</td>
+                    <td class="code"><pre><code>movq %rdx, (%rax)</code></pre></td>
+                        <td>True</td>
+                </tr>
+                
+                <tr>
+                    <td>0x4000d264ce</td>
+                    <td class="code"><pre><code>xorl %eax, %eax</code></pre></td>
+                        <td>True</td>
+                </tr>
+                
+                <tr>
+                    <td>0x4000d264d0</td>
+                    <td class="code"><pre><code>cmpq %rdx, %rdi</code></pre></td>
+                        <td>True</td>
+                </tr>
+                
+                <tr>
+                    <td>0x4000d264d3</td>
+                    <td class="code"><pre><code>ja 0x4000d26500</code></pre></td>
+                        <td>True</td>
+                </tr>
+                
+                <tr>
+                    <td>0x4000d264d5</td>
+                    <td class="code"><pre><code>retq </code></pre></td>
+                        <td>True</td>
+                </tr>
+                
+                <tr>
+                    <td>0x4000d264d7</td>
+                    <td class="code"><pre><code>nopw (%rax, %rax)</code></pre></td>
+                        <td>False</td>
+                </tr>
+                
+                <tr>
+                    <td>0x4000d264e0</td>
+                    <td class="code"><pre><code>movq 0x2b8991(%rip), %rax</code></pre></td>
+                        <td>False</td>
+                </tr>
+                
+                <tr>
+                    <td>0x4000d264e7</td>
+                    <td class="code"><pre><code>negl %edx</code></pre></td>
+                        <td>False</td>
+                </tr>
+                
+                <tr>
+                    <td>0x4000d264e9</td>
+                    <td class="code"><pre><code>movl %edx, %fs:(%rax)</code></pre></td>
+                        <td>False</td>
+                </tr>
+                
+                <tr>
+                    <td>0x4000d264ec</td>
+                    <td class="code"><pre><code>movq 0x2b89d5(%rip), %rax</code></pre></td>
+                        <td>False</td>
+                </tr>
+                
+                <tr>
+                    <td>0x4000d264f3</td>
+                    <td class="code"><pre><code>movq $-1, (%rax)</code></pre></td>
+                        <td>False</td>
+                </tr>
+                
+                <tr>
+                    <td>0x4000d264fa</td>
+                    <td class="code"><pre><code>xorl %eax, %eax</code></pre></td>
+                        <td>False</td>
+                </tr>
+                
+                <tr>
+                    <td>0x4000d264fc</td>
+                    <td class="code"><pre><code>retq </code></pre></td>
+                        <td>False</td>
+                </tr>
+                
+                <tr>
+                    <td>0x4000d264fd</td>
+                    <td class="code"><pre><code>nopl (%rax)</code></pre></td>
+                        <td>False</td>
+                </tr>
+                
+                <tr>
+                    <td>0x4000d26500</td>
+                    <td class="code"><pre><code>movq 0x2b8971(%rip), %rax</code></pre></td>
+                        <td>True</td>
+                </tr>
+                
+                <tr>
+                    <td>0x4000d26507</td>
+                    <td class="code"><pre><code>movl $0xc, %fs:(%rax)</code></pre></td>
+                        <td>True</td>
+                </tr>
+                
+                <tr>
+                    <td>0x4000d2650e</td>
+                    <td class="code"><pre><code>movl $0xffffffff, %eax</code></pre></td>
+                        <td>True</td>
+                </tr>
+                
+                <tr>
+                    <td>0x4000d26513</td>
+                    <td class="code"><pre><code>retq </code></pre></td>
+                        <td>True</td>
+                </tr>
+                
+            </tbody>
+        </table>
+    </div>
+
+    <div style="clear:both;"/>
+        <script>
+    function init() {
+        $('.svg_div').each(function() {
+            var file = this.textContent;
+            this.textContent = '';
+            $(this).load(file, function() {
+                var img = $(this).children('svg');
+                if (img[0] == undefined)
+                    return;
+                img.width('100%').height('100%');
+                if ($(this).hasClass('callgraph_pan'))
+                {
+                    $(this).width('100%').height('75vh');
+                }
+                if ($(this).hasClass('svg_pan'))
+                {
+                    svgPanZoom(img[0], {
+                        minZoom: 0.001,
+                        maxZoom: 1000,
+                        zoomEnabled: true,
+                        controlIconsEnabled: true,
+                        zoomScaleSensitivity: 0.5
+                    });
+                }
+            });
+        });
+        $('.dyn_table').dataTable({
+            paging: false,
+            deferRender: true,
+            responsive: true
+        });
+    };
+window.onload = init;
+</script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+digraph {
+	node [shape=box]
+	1267 [label="0x4000000640
+_______________________
+_______________________
+pushq %rbp
+movq %rsp, %rbp
+popq %rbp
+jmp 0x40000005b0
+_______________________
+CALL register_tm_clones"]
+}

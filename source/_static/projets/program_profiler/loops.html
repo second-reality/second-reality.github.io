@@ -1,0 +1,1106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Loops Index</title>
+        <script src="./ext/js/jquery.min.js"></script>
+        <script src="./ext/datatables/datatables.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="./ext/datatables/datatables.min.css">
+        <script src="./ext/js/svg-pan-zoom.min.js"></script>
+    </head>
+    <body>
+        <style>
+/* avoid spacing in table row with <pre> */
+pre
+{
+    display: inline;
+}
+        </style>
+<p>
+<a href="index.html">Back to index</a> |
+<a href="loops.html.cpu_flamegraph.txt.svg">cpu flamegraph</a>
+</p>
+
+<object data="loops.html.cpu_flamegraph.txt.svg" type="image/svg+xml"></object>
+<object data="loops.html.mem_read_flamegraph.txt.svg" type="image/svg+xml"></object>
+<object data="loops.html.mem_write_flamegraph.txt.svg" type="image/svg+xml"></object>
+
+<table class="dyn_table display compact">
+    <thead>
+        <tr>
+            <th>pc</th>
+            <th>symbols</th>
+            <th>source file</th>
+            <th>times entered</th>
+            <th>number of iterations</th>
+            <th>inst exec (%)</th>
+            <th>control inst exec (%)</th>
+            <th>arith logic inst exec (%)</th>
+            <th>memory inst exec (%)</th>
+            <th>bytes read (%)</th>
+            <th>bytes written (%)</th>
+            <th>cumulated inst exec (%)</th>
+            <th>cumulated bytes read (%)</th>
+            <th>cumulated bytes written (%)</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+        <tr>
+            <td>0x4000000687</a></td>
+            <td><a href="symbol_1860.html">pimp_my_loop</a></td>
+            <td>/home/user/.code/try/main.c:7</td>
+            <td>250</td>
+            <td>24999</td>
+            <td>16.03%</td>
+            <td>20.63%</td>
+            <td>41.63%</td>
+            <td>37.74%</td>
+            <td>21.65%</td>
+            <td>26.24%</td>
+            <td>99.64%</td>
+            <td>99.61%</td>
+            <td>99.77%</td>
+        </tr>
+        
+        <tr>
+            <td>0x4000000691</a></td>
+            <td><a href="symbol_1860.html">pimp_my_loop</a></td>
+            <td>/home/user/.code/try/main.c:5</td>
+            <td>10</td>
+            <td>250</td>
+            <td>0.0%</td>
+            <td>40.13%</td>
+            <td>0%</td>
+            <td>59.87%</td>
+            <td>0.0%</td>
+            <td>0.01%</td>
+            <td>99.26%</td>
+            <td>99.23%</td>
+            <td>99.38%</td>
+        </tr>
+        
+        <tr>
+            <td>0x40000006b9</a></td>
+            <td><a href="symbol_1863.html">main</a></td>
+            <td>/home/user/.code/try/main.c:14</td>
+            <td>1</td>
+            <td>9</td>
+            <td>0.0%</td>
+            <td>26.67%</td>
+            <td>40.0%</td>
+            <td>33.33%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+            <td>89.75%</td>
+            <td>89.71%</td>
+            <td>89.8%</td>
+        </tr>
+        
+        <tr>
+            <td>0x4000a03b1d</a></td>
+            <td><a href="symbol_69.html">0x4000a03aa0</a></td>
+            <td></td>
+            <td>1</td>
+            <td>2</td>
+            <td>0.0%</td>
+            <td>38.89%</td>
+            <td>33.33%</td>
+            <td>27.78%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+        </tr>
+        
+        <tr>
+            <td>0x4000a04903</a></td>
+            <td><a href="symbol_18.html">0x4000a04850</a></td>
+            <td></td>
+            <td>2</td>
+            <td>15</td>
+            <td>0.0%</td>
+            <td>26.06%</td>
+            <td>51.41%</td>
+            <td>22.54%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+        </tr>
+        
+        <tr>
+            <td>0x4000a04bb0</a></td>
+            <td><a href="symbol_18.html">0x4000a04850</a></td>
+            <td></td>
+            <td>1</td>
+            <td>6</td>
+            <td>0.0%</td>
+            <td>20.0%</td>
+            <td>40.0%</td>
+            <td>40.0%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+        </tr>
+        
+        <tr>
+            <td>0x4000a04c00</a></td>
+            <td><a href="symbol_18.html">0x4000a04850</a></td>
+            <td></td>
+            <td>1</td>
+            <td>5</td>
+            <td>0.0%</td>
+            <td>23.33%</td>
+            <td>43.33%</td>
+            <td>33.33%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+        </tr>
+        
+        <tr>
+            <td>0x4000a0546e</a></td>
+            <td><a href="symbol_25.html">0x4000a04f10</a></td>
+            <td></td>
+            <td>6</td>
+            <td>2</td>
+            <td>0.0%</td>
+            <td>42.67%</td>
+            <td>37.33%</td>
+            <td>20.0%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+        </tr>
+        
+        <tr>
+            <td>0x4000a0563d</a></td>
+            <td><a href="symbol_25.html">0x4000a04f10</a></td>
+            <td></td>
+            <td>2</td>
+            <td>22</td>
+            <td>0.0%</td>
+            <td>26.26%</td>
+            <td>50.51%</td>
+            <td>23.23%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+        </tr>
+        
+        <tr>
+            <td>0x4000a06cec</a></td>
+            <td><a href="symbol_25.html">0x4000a04f10</a></td>
+            <td></td>
+            <td>2</td>
+            <td>1</td>
+            <td>0.0%</td>
+            <td>19.59%</td>
+            <td>35.05%</td>
+            <td>45.36%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+            <td>0.01%</td>
+            <td>0.01%</td>
+            <td>0.01%</td>
+        </tr>
+        
+        <tr>
+            <td>0x4000a087a1</a></td>
+            <td><a href="symbol_60.html">0x4000a086f0</a></td>
+            <td></td>
+            <td>1</td>
+            <td>0</td>
+            <td>0.0%</td>
+            <td>42.86%</td>
+            <td>14.29%</td>
+            <td>42.86%</td>
+            <td>0.0%</td>
+            <td>0%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+            <td>0%</td>
+        </tr>
+        
+        <tr>
+            <td>0x4000a08974</a></td>
+            <td><a href="symbol_60.html">0x4000a086f0</a></td>
+            <td></td>
+            <td>6</td>
+            <td>3</td>
+            <td>0.0%</td>
+            <td>28.12%</td>
+            <td>42.97%</td>
+            <td>28.91%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+        </tr>
+        
+        <tr>
+            <td>0x4000a08c61</a></td>
+            <td><a href="symbol_60.html">0x4000a086f0</a></td>
+            <td></td>
+            <td>1</td>
+            <td>0</td>
+            <td>0.0%</td>
+            <td>37.5%</td>
+            <td>12.5%</td>
+            <td>50.0%</td>
+            <td>0.0%</td>
+            <td>0%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+            <td>0%</td>
+        </tr>
+        
+        <tr>
+            <td>0x4000a08e61</a></td>
+            <td><a href="symbol_60.html">0x4000a086f0</a></td>
+            <td></td>
+            <td>2</td>
+            <td>22</td>
+            <td>0.0%</td>
+            <td>25.85%</td>
+            <td>51.71%</td>
+            <td>22.44%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+        </tr>
+        
+        <tr>
+            <td>0x4000a09b35</a></td>
+            <td><a href="symbol_58.html">0x4000a09990</a></td>
+            <td></td>
+            <td>1</td>
+            <td>4</td>
+            <td>0.0%</td>
+            <td>26.47%</td>
+            <td>35.29%</td>
+            <td>38.24%</td>
+            <td>0.0%</td>
+            <td>0%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+            <td>0%</td>
+        </tr>
+        
+        <tr>
+            <td>0x4000a0b12d</a></td>
+            <td><a href="symbol_35.html">0x4000a0b040</a></td>
+            <td></td>
+            <td>1</td>
+            <td>2</td>
+            <td>0.0%</td>
+            <td>22.92%</td>
+            <td>42.71%</td>
+            <td>34.38%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+        </tr>
+        
+        <tr>
+            <td>0x4000a0b549</a></td>
+            <td><a href="symbol_48.html">0x4000a0b4e0</a></td>
+            <td></td>
+            <td>2</td>
+            <td>1</td>
+            <td>0.0%</td>
+            <td>20.45%</td>
+            <td>59.85%</td>
+            <td>19.7%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+        </tr>
+        
+        <tr>
+            <td>0x4000a0c320</a></td>
+            <td><a href="symbol_75.html">0x4000a0c2b0</a></td>
+            <td></td>
+            <td>86</td>
+            <td>91</td>
+            <td>0.05%</td>
+            <td>18.3%</td>
+            <td>44.85%</td>
+            <td>36.84%</td>
+            <td>0.09%</td>
+            <td>0.04%</td>
+            <td>0.06%</td>
+            <td>0.09%</td>
+            <td>0.04%</td>
+        </tr>
+        
+        <tr>
+            <td>0x4000a0ca35</a></td>
+            <td><a href="symbol_75.html">0x4000a0c2b0</a></td>
+            <td></td>
+            <td>81</td>
+            <td>79</td>
+            <td>0.0%</td>
+            <td>23.08%</td>
+            <td>61.54%</td>
+            <td>15.38%</td>
+            <td>0.0%</td>
+            <td>0%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+            <td>0%</td>
+        </tr>
+        
+        <tr>
+            <td>0x4000a0e0db</a></td>
+            <td><a href="symbol_30.html">0x4000a0e0a0</a></td>
+            <td></td>
+            <td>1</td>
+            <td>1</td>
+            <td>0.0%</td>
+            <td>25.0%</td>
+            <td>50.0%</td>
+            <td>25.0%</td>
+            <td>0.0%</td>
+            <td>0%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+            <td>0%</td>
+        </tr>
+        
+        <tr>
+            <td>0x4000a0e423</a></td>
+            <td><a href="symbol_27.html">0x4000a0e130</a></td>
+            <td></td>
+            <td>1</td>
+            <td>10</td>
+            <td>0.0%</td>
+            <td>25.0%</td>
+            <td>25.0%</td>
+            <td>50.0%</td>
+            <td>0.0%</td>
+            <td>0%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+            <td>0%</td>
+        </tr>
+        
+        <tr>
+            <td>0x4000a0e91f</a></td>
+            <td><a href="symbol_73.html">0x4000a0e720</a></td>
+            <td></td>
+            <td>4</td>
+            <td>2</td>
+            <td>0.0%</td>
+            <td>15.49%</td>
+            <td>39.95%</td>
+            <td>44.57%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+            <td>0.02%</td>
+            <td>0.02%</td>
+            <td>0.02%</td>
+        </tr>
+        
+        <tr>
+            <td>0x4000a0e96c</a></td>
+            <td><a href="symbol_73.html">0x4000a0e720</a></td>
+            <td></td>
+            <td>3</td>
+            <td>10</td>
+            <td>0.0%</td>
+            <td>28.19%</td>
+            <td>53.02%</td>
+            <td>18.79%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+        </tr>
+        
+        <tr>
+            <td>0x4000a0e9b1</a></td>
+            <td><a href="symbol_73.html">0x4000a0e720</a></td>
+            <td></td>
+            <td>1</td>
+            <td>6</td>
+            <td>0.0%</td>
+            <td>24.19%</td>
+            <td>37.1%</td>
+            <td>38.71%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+        </tr>
+        
+        <tr>
+            <td>0x4000a0ea90</a></td>
+            <td><a href="symbol_73.html">0x4000a0e720</a></td>
+            <td></td>
+            <td>2</td>
+            <td>1188</td>
+            <td>0.04%</td>
+            <td>23.08%</td>
+            <td>46.16%</td>
+            <td>30.77%</td>
+            <td>0.05%</td>
+            <td>0.03%</td>
+            <td>0.04%</td>
+            <td>0.05%</td>
+            <td>0.03%</td>
+        </tr>
+        
+        <tr>
+            <td>0x4000a0eb10</a></td>
+            <td><a href="symbol_73.html">0x4000a0e720</a></td>
+            <td></td>
+            <td>6</td>
+            <td>92</td>
+            <td>0.07%</td>
+            <td>14.18%</td>
+            <td>52.67%</td>
+            <td>33.15%</td>
+            <td>0.08%</td>
+            <td>0.09%</td>
+            <td>0.12%</td>
+            <td>0.16%</td>
+            <td>0.13%</td>
+        </tr>
+        
+        <tr>
+            <td>0x4000a102d7</a></td>
+            <td><a href="symbol_43.html">0x4000a10180</a></td>
+            <td></td>
+            <td>3</td>
+            <td>0</td>
+            <td>0.0%</td>
+            <td>36.0%</td>
+            <td>16.0%</td>
+            <td>48.0%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+        </tr>
+        
+        <tr>
+            <td>0x4000a10388</a></td>
+            <td><a href="symbol_43.html">0x4000a10180</a></td>
+            <td></td>
+            <td>3</td>
+            <td>46</td>
+            <td>0.0%</td>
+            <td>26.76%</td>
+            <td>52.4%</td>
+            <td>20.83%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+        </tr>
+        
+        <tr>
+            <td>0x4000a1072a</a></td>
+            <td><a href="symbol_43.html">0x4000a10180</a></td>
+            <td></td>
+            <td>1</td>
+            <td>1</td>
+            <td>0.0%</td>
+            <td>18.18%</td>
+            <td>36.36%</td>
+            <td>45.45%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+        </tr>
+        
+        <tr>
+            <td>0x4000a10960</a></td>
+            <td><a href="symbol_43.html">0x4000a10180</a></td>
+            <td></td>
+            <td>1</td>
+            <td>0</td>
+            <td>0.0%</td>
+            <td>15.38%</td>
+            <td>7.69%</td>
+            <td>76.92%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+        </tr>
+        
+        <tr>
+            <td>0x4000a11978</a></td>
+            <td><a href="symbol_36.html">0x4000a113c0</a></td>
+            <td></td>
+            <td>1</td>
+            <td>0</td>
+            <td>0.0%</td>
+            <td>21.43%</td>
+            <td>78.57%</td>
+            <td>0%</td>
+            <td>0%</td>
+            <td>0%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+        </tr>
+        
+        <tr>
+            <td>0x4000a11990</a></td>
+            <td><a href="symbol_36.html">0x4000a113c0</a></td>
+            <td></td>
+            <td>2</td>
+            <td>1</td>
+            <td>0.0%</td>
+            <td>24.14%</td>
+            <td>62.07%</td>
+            <td>13.79%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+        </tr>
+        
+        <tr>
+            <td>0x4000a126c3</a></td>
+            <td><a href="symbol_1848.html">0x4000a12660</a></td>
+            <td></td>
+            <td>1</td>
+            <td>2</td>
+            <td>0.0%</td>
+            <td>18.44%</td>
+            <td>58.22%</td>
+            <td>23.33%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+        </tr>
+        
+        <tr>
+            <td>0x4000a1281d</a></td>
+            <td><a href="symbol_1880.html">0x4000a12790</a></td>
+            <td></td>
+            <td>1</td>
+            <td>0</td>
+            <td>0.0%</td>
+            <td>27.27%</td>
+            <td>18.18%</td>
+            <td>54.55%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+        </tr>
+        
+        <tr>
+            <td>0x4000a12aa9</a></td>
+            <td><a href="symbol_1879.html">0x4000a129e0</a></td>
+            <td></td>
+            <td>1</td>
+            <td>1</td>
+            <td>0.0%</td>
+            <td>25.0%</td>
+            <td>33.33%</td>
+            <td>41.67%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+        </tr>
+        
+        <tr>
+            <td>0x4000a12b40</a></td>
+            <td><a href="symbol_1879.html">0x4000a129e0</a></td>
+            <td></td>
+            <td>2</td>
+            <td>0</td>
+            <td>0.0%</td>
+            <td>25.81%</td>
+            <td>32.26%</td>
+            <td>41.94%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+        </tr>
+        
+        <tr>
+            <td>0x4000a136a9</a></td>
+            <td><a href="symbol_49.html">0x4000a13670</a></td>
+            <td></td>
+            <td>21</td>
+            <td>2</td>
+            <td>0.0%</td>
+            <td>20.99%</td>
+            <td>54.28%</td>
+            <td>24.73%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+        </tr>
+        
+        <tr>
+            <td>0x4000a137c5</a></td>
+            <td><a href="symbol_68.html">0x4000a13760</a></td>
+            <td></td>
+            <td>3</td>
+            <td>6</td>
+            <td>0.0%</td>
+            <td>38.89%</td>
+            <td>22.22%</td>
+            <td>38.89%</td>
+            <td>0.0%</td>
+            <td>0%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+            <td>0%</td>
+        </tr>
+        
+        <tr>
+            <td>0x4000a13c2d</a></td>
+            <td><a href="symbol_67.html">0x4000a13b70</a></td>
+            <td></td>
+            <td>2</td>
+            <td>2</td>
+            <td>0.0%</td>
+            <td>20.83%</td>
+            <td>61.57%</td>
+            <td>17.59%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+        </tr>
+        
+        <tr>
+            <td>0x4000a13c58</a></td>
+            <td><a href="symbol_67.html">0x4000a13b70</a></td>
+            <td></td>
+            <td>1</td>
+            <td>0</td>
+            <td>0.0%</td>
+            <td>14.93%</td>
+            <td>55.97%</td>
+            <td>29.1%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+        </tr>
+        
+        <tr>
+            <td>0x4000a13dc3</a></td>
+            <td><a href="symbol_67.html">0x4000a13b70</a></td>
+            <td></td>
+            <td>2</td>
+            <td>30</td>
+            <td>0.0%</td>
+            <td>12.55%</td>
+            <td>62.35%</td>
+            <td>25.1%</td>
+            <td>0.0%</td>
+            <td>0%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+            <td>0%</td>
+        </tr>
+        
+        <tr>
+            <td>0x4000a13e53</a></td>
+            <td><a href="symbol_67.html">0x4000a13b70</a></td>
+            <td></td>
+            <td>1</td>
+            <td>0</td>
+            <td>0.0%</td>
+            <td>5.88%</td>
+            <td>35.29%</td>
+            <td>58.82%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+        </tr>
+        
+        <tr>
+            <td>0x4000a13ed3</a></td>
+            <td><a href="symbol_67.html">0x4000a13b70</a></td>
+            <td></td>
+            <td>2</td>
+            <td>29</td>
+            <td>0.0%</td>
+            <td>11.91%</td>
+            <td>23.44%</td>
+            <td>64.65%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+        </tr>
+        
+        <tr>
+            <td>0x4000a1403b</a></td>
+            <td><a href="symbol_66.html">0x4000a14010</a></td>
+            <td></td>
+            <td>1</td>
+            <td>1</td>
+            <td>0.0%</td>
+            <td>18.18%</td>
+            <td>47.55%</td>
+            <td>34.27%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+        </tr>
+        
+        <tr>
+            <td>0x4000a16270</a></td>
+            <td><a href="symbol_7.html">_dl_find_dso_for_object</a></td>
+            <td></td>
+            <td>1</td>
+            <td>0</td>
+            <td>0.0%</td>
+            <td>50.0%</td>
+            <td>0%</td>
+            <td>50.0%</td>
+            <td>0.0%</td>
+            <td>0%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+            <td>0%</td>
+        </tr>
+        
+        <tr>
+            <td>0x4000a1900b</a></td>
+            <td><a href="symbol_56.html">0x4000a19000</a></td>
+            <td></td>
+            <td>9</td>
+            <td>33</td>
+            <td>0.0%</td>
+            <td>29.24%</td>
+            <td>41.53%</td>
+            <td>29.24%</td>
+            <td>0.0%</td>
+            <td>0%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+            <td>0%</td>
+        </tr>
+        
+        <tr>
+            <td>0x4000a191ce</a></td>
+            <td><a href="symbol_50.html">0x4000a190e0</a></td>
+            <td></td>
+            <td>2</td>
+            <td>5</td>
+            <td>0.0%</td>
+            <td>27.84%</td>
+            <td>48.3%</td>
+            <td>23.86%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+        </tr>
+        
+        <tr>
+            <td>0x4000a1a1e8</a></td>
+            <td><a href="symbol_20.html">0x4000a1a0e0</a></td>
+            <td></td>
+            <td>7</td>
+            <td>7</td>
+            <td>0.0%</td>
+            <td>31.25%</td>
+            <td>50.0%</td>
+            <td>18.75%</td>
+            <td>0.0%</td>
+            <td>0%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+            <td>0%</td>
+        </tr>
+        
+        <tr>
+            <td>0x4000a1a955</a></td>
+            <td><a href="symbol_33.html">0x4000a1a850</a></td>
+            <td></td>
+            <td>2</td>
+            <td>0</td>
+            <td>0.0%</td>
+            <td>19.23%</td>
+            <td>38.46%</td>
+            <td>42.31%</td>
+            <td>0.0%</td>
+            <td>0%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+            <td>0%</td>
+        </tr>
+        
+        <tr>
+            <td>0x4000a1aa4c</a></td>
+            <td><a href="symbol_26.html">0x4000a1aa30</a></td>
+            <td></td>
+            <td>2</td>
+            <td>21</td>
+            <td>0.0%</td>
+            <td>34.06%</td>
+            <td>31.88%</td>
+            <td>34.06%</td>
+            <td>0.0%</td>
+            <td>0%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+            <td>0%</td>
+        </tr>
+        
+        <tr>
+            <td>0x4000c78658</a></td>
+            <td><a href="symbol_1878.html">0x4000c78630</a></td>
+            <td></td>
+            <td>1</td>
+            <td>0</td>
+            <td>0.0%</td>
+            <td>16.67%</td>
+            <td>50.0%</td>
+            <td>33.33%</td>
+            <td>0.0%</td>
+            <td>0%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+            <td>0%</td>
+        </tr>
+        
+        <tr>
+            <td>0x4000c8abd0</a></td>
+            <td><a href="symbol_184.html">_IO_vfprintf</a></td>
+            <td></td>
+            <td>25000</td>
+            <td>49999</td>
+            <td>81.58%</td>
+            <td>20.75%</td>
+            <td>51.49%</td>
+            <td>27.75%</td>
+            <td>77.64%</td>
+            <td>73.53%</td>
+            <td>82.05%</td>
+            <td>77.72%</td>
+            <td>73.53%</td>
+        </tr>
+        
+        <tr>
+            <td>0x4000cb6710</a></td>
+            <td><a href="symbol_920.html">_IO_file_xsputn</a></td>
+            <td></td>
+            <td>149994</td>
+            <td>162494</td>
+            <td>2.03%</td>
+            <td>40.0%</td>
+            <td>40.0%</td>
+            <td>20.0%</td>
+            <td>0.31%</td>
+            <td>0%</td>
+            <td>2.03%</td>
+            <td>0.31%</td>
+            <td>0%</td>
+        </tr>
+        
+        <tr>
+            <td>0x4000cb8410</a></td>
+            <td><a href="symbol_1071.html">_IO_default_xsputn</a></td>
+            <td></td>
+            <td>1</td>
+            <td>5</td>
+            <td>0.0%</td>
+            <td>28.95%</td>
+            <td>45.86%</td>
+            <td>25.19%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+        </tr>
+        
+        <tr>
+            <td>0x4000cb8ca3</a></td>
+            <td><a href="symbol_1883.html">0x4000cb8ba0</a></td>
+            <td></td>
+            <td>1</td>
+            <td>1</td>
+            <td>0.0%</td>
+            <td>35.0%</td>
+            <td>30.0%</td>
+            <td>35.0%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+        </tr>
+        
+        <tr>
+            <td>0x4000cb9013</a></td>
+            <td><a href="symbol_1882.html">0x4000cb8f20</a></td>
+            <td></td>
+            <td>2</td>
+            <td>0</td>
+            <td>0.0%</td>
+            <td>30.77%</td>
+            <td>30.77%</td>
+            <td>38.46%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+        </tr>
+        
+        <tr>
+            <td>0x4000cbcc2b</a></td>
+            <td><a href="symbol_1872.html">0x4000cbc670</a></td>
+            <td></td>
+            <td>1</td>
+            <td>0</td>
+            <td>0.0%</td>
+            <td>33.33%</td>
+            <td>66.67%</td>
+            <td>0%</td>
+            <td>0%</td>
+            <td>0%</td>
+            <td>0.0%</td>
+            <td>0%</td>
+            <td>0%</td>
+        </tr>
+        
+        <tr>
+            <td>0x4000cbf734</a></td>
+            <td><a href="symbol_1869.html">0x4000cbf6b0</a></td>
+            <td></td>
+            <td>1</td>
+            <td>23</td>
+            <td>0.0%</td>
+            <td>33.33%</td>
+            <td>33.33%</td>
+            <td>33.33%</td>
+            <td>0.0%</td>
+            <td>0%</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+            <td>0%</td>
+        </tr>
+        
+        <tr>
+            <td>0x4000d67870</a></td>
+            <td><a href="symbol_747.html">_dl_addr</a></td>
+            <td></td>
+            <td>2</td>
+            <td>1009</td>
+            <td>0.02%</td>
+            <td>30.2%</td>
+            <td>40.65%</td>
+            <td>29.15%</td>
+            <td>0.02%</td>
+            <td>0%</td>
+            <td>0.14%</td>
+            <td>0.12%</td>
+            <td>0%</td>
+        </tr>
+        
+        <tr>
+            <td>0x4000d678af</a></td>
+            <td><a href="symbol_747.html">_dl_addr</a></td>
+            <td></td>
+            <td>910</td>
+            <td>1341</td>
+            <td>0.12%</td>
+            <td>23.28%</td>
+            <td>41.87%</td>
+            <td>34.85%</td>
+            <td>0.1%</td>
+            <td>0%</td>
+            <td>0.12%</td>
+            <td>0.1%</td>
+            <td>0%</td>
+        </tr>
+        
+    </tbody>
+</table>
+<script>
+    function init() {
+        $('.svg_div').each(function() {
+            var file = this.textContent;
+            this.textContent = '';
+            $(this).load(file, function() {
+                var img = $(this).children('svg');
+                if (img[0] == undefined)
+                    return;
+                img.width('100%').height('100%');
+                if ($(this).hasClass('callgraph_pan'))
+                {
+                    $(this).width('100%').height('75vh');
+                }
+                if ($(this).hasClass('svg_pan'))
+                {
+                    svgPanZoom(img[0], {
+                        minZoom: 0.001,
+                        maxZoom: 1000,
+                        zoomEnabled: true,
+                        controlIconsEnabled: true,
+                        zoomScaleSensitivity: 0.5
+                    });
+                }
+            });
+        });
+        $('.dyn_table').dataTable({
+            paging: false,
+            deferRender: true,
+            responsive: true
+        });
+    };
+window.onload = init;
+</script>
+</body>
+</html>
