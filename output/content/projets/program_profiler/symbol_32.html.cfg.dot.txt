@@ -1,0 +1,453 @@
+digraph {
+	node [shape=box]
+	195 -> 196
+	195 -> 197
+	195 [label="0x4000a1ca40
+_______________________
+_______________________
+movl %esi, %ecx
+movl %edi, %eax
+andq $0x3f, %rcx
+andq $0x3f, %rax
+cmpl $0x30, %ecx
+ja 0x4000a1ca90"]
+	196 -> 197
+	196 -> 384
+	196 [label="0x4000a1ca51
+_______________________
+_______________________
+cmpl $0x30, %eax
+ja 0x4000a1ca90"]
+	197 -> 198
+	197 -> 1037
+	197 [label="0x4000a1ca90
+_______________________
+_______________________
+andq $0xfffffff0, %rsi
+andq $0xfffffff0, %rdi
+movl $0xffff, %edx
+xorl %r8d, %r8d
+andl $0xf, %ecx
+andl $0xf, %eax
+cmpl %eax, %ecx
+je 0x4000a1cad0"]
+	198 -> 199
+	198 -> 396
+	198 [label="0x4000a1caaa
+_______________________
+_______________________
+ja 0x4000a1cab3"]
+	199 -> 396
+	199 [label="0x4000a1caac
+_______________________
+_______________________
+movl %edx, %r8d
+xchgl %ecx, %eax
+xchgq %rsi, %rdi"]
+	200 -> 201
+	200 [label="0x4000a1dcf0
+_______________________
+_______________________
+pxor %xmm0, %xmm0
+movdqa (%rdi), %xmm2
+movdqa (%rsi), %xmm1
+pcmpeqb %xmm1, %xmm0
+pslldq $1, %xmm2
+pcmpeqb %xmm1, %xmm2
+psubb %xmm0, %xmm2
+pmovmskb %xmm2, %r9d
+shrl %cl, %edx
+shrl %cl, %r9d
+subl %r9d, %edx
+jne 0x4000a1de35"]
+	201 -> 202
+	201 -> 385
+	201 [label="0x4000a1de35
+_______________________
+_______________________
+leaq (%rdi, %rax), %rdi
+leaq (%rsi, %rcx), %rsi
+testl %r8d, %r8d
+je 0x4000a1de50"]
+	202 -> 385
+	202 [label="0x4000a1de42
+_______________________
+_______________________
+xchgq %rsi, %rdi
+nop 
+nopw %cs:(%rax, %rax)"]
+	384 -> 385
+	384 -> 747
+	384 [label="0x4000a1ca56
+_______________________
+_______________________
+movlpd (%rdi), %xmm1
+movlpd (%rsi), %xmm2
+movhpd 8(%rdi), %xmm1
+movhpd 8(%rsi), %xmm2
+pxor %xmm0, %xmm0
+pcmpeqb %xmm1, %xmm0
+pcmpeqb %xmm2, %xmm1
+psubb %xmm0, %xmm1
+pmovmskb %xmm1, %edx
+subl $0xffff, %edx
+jne 0x4000a1de50"]
+	385 [label="0x4000a1de50
+_______________________
+_______________________
+bsfq %rdx, %rdx
+movzbl (%rsi, %rdx), %ecx
+movzbl (%rdi, %rdx), %eax
+subl %ecx, %eax
+retq "]
+	396 -> 200
+	396 -> 397
+	396 -> 746
+	396 -> 748
+	396 -> 847
+	396 -> 1032
+	396 -> 1362
+	396 [label="0x4000a1cab3
+_______________________
+_______________________
+leaq 0xf(%rax), %r9
+subq %rcx, %r9
+leaq 0x32cf(%rip), %r10
+movslq (%r10, %r9, 4), %r9
+leaq (%r10, %r9), %r10
+jmpq *%r10"]
+	397 -> 201
+	397 -> 852
+	397 [label="0x4000a1d570
+_______________________
+_______________________
+pxor %xmm0, %xmm0
+movdqa (%rdi), %xmm2
+movdqa (%rsi), %xmm1
+pcmpeqb %xmm1, %xmm0
+pslldq $7, %xmm2
+pcmpeqb %xmm1, %xmm2
+psubb %xmm0, %xmm2
+pmovmskb %xmm2, %r9d
+shrl %cl, %edx
+shrl %cl, %r9d
+subl %r9d, %edx
+jne 0x4000a1de35"]
+	746 -> 201
+	746 -> 1040
+	746 [label="0x4000a1da70
+_______________________
+_______________________
+pxor %xmm0, %xmm0
+movdqa (%rdi), %xmm2
+movdqa (%rsi), %xmm1
+pcmpeqb %xmm1, %xmm0
+pslldq $3, %xmm2
+pcmpeqb %xmm1, %xmm2
+psubb %xmm0, %xmm2
+pmovmskb %xmm2, %r9d
+shrl %cl, %edx
+shrl %cl, %r9d
+subl %r9d, %edx
+jne 0x4000a1de35"]
+	747 -> 197
+	747 [label="0x4000a1ca88
+_______________________
+_______________________
+addq $0x10, %rsi
+addq $0x10, %rdi"]
+	748 -> 201
+	748 -> 1128
+	748 [label="0x4000a1dbb0
+_______________________
+_______________________
+pxor %xmm0, %xmm0
+movdqa (%rdi), %xmm2
+movdqa (%rsi), %xmm1
+pcmpeqb %xmm1, %xmm0
+pslldq $2, %xmm2
+pcmpeqb %xmm1, %xmm2
+psubb %xmm0, %xmm2
+pmovmskb %xmm2, %r9d
+shrl %cl, %edx
+shrl %cl, %r9d
+subl %r9d, %edx
+jne 0x4000a1de35"]
+	847 -> 201
+	847 -> 848
+	847 [label="0x4000a1d930
+_______________________
+_______________________
+pxor %xmm0, %xmm0
+movdqa (%rdi), %xmm2
+movdqa (%rsi), %xmm1
+pcmpeqb %xmm1, %xmm0
+pslldq $4, %xmm2
+pcmpeqb %xmm1, %xmm2
+psubb %xmm0, %xmm2
+pmovmskb %xmm2, %r9d
+shrl %cl, %edx
+shrl %cl, %r9d
+subl %r9d, %edx
+jne 0x4000a1de35"]
+	848 -> 849
+	848 [label="0x4000a1d960
+_______________________
+_______________________
+movdqa (%rdi), %xmm3
+pxor %xmm0, %xmm0
+movq $0x10, %rcx
+movl $0xc, %r9d
+leaq 0xc(%rdi), %r10
+andq $0xfff, %r10
+subq $0x1000, %r10
+nopw (%rax, %rax)
+addq $0x10, %r10
+jg 0x4000a1da30"]
+	849 -> 850
+	849 [label="0x4000a1d99a
+_______________________
+_______________________
+movdqa (%rsi, %rcx), %xmm1
+movdqa (%rdi, %rcx), %xmm2
+movdqa %xmm2, %xmm4
+psrldq $0xc, %xmm3
+pslldq $4, %xmm2
+por %xmm3, %xmm2
+pcmpeqb %xmm1, %xmm0
+pcmpeqb %xmm2, %xmm1
+psubb %xmm0, %xmm1
+pmovmskb %xmm1, %edx
+subl $0xffff, %edx
+jne 0x4000a1de30"]
+	850 -> 201
+	850 [label="0x4000a1de30
+_______________________
+_______________________
+leaq -0x10(%r9, %rcx), %rax"]
+	852 -> 853
+	852 [label="0x4000a1d5a0
+_______________________
+_______________________
+movdqa (%rdi), %xmm3
+pxor %xmm0, %xmm0
+movq $0x10, %rcx
+movl $9, %r9d
+leaq 9(%rdi), %r10
+andq $0xfff, %r10
+subq $0x1000, %r10
+nopw (%rax, %rax)
+addq $0x10, %r10
+jg 0x4000a1d670"]
+	853 -> 850
+	853 [label="0x4000a1d5da
+_______________________
+_______________________
+movdqa (%rsi, %rcx), %xmm1
+movdqa (%rdi, %rcx), %xmm2
+movdqa %xmm2, %xmm4
+psrldq $9, %xmm3
+pslldq $7, %xmm2
+por %xmm3, %xmm2
+pcmpeqb %xmm1, %xmm0
+pcmpeqb %xmm2, %xmm1
+psubb %xmm0, %xmm1
+pmovmskb %xmm1, %edx
+subl $0xffff, %edx
+jne 0x4000a1de30"]
+	1032 -> 1033
+	1032 [label="0x4000a1d070
+_______________________
+_______________________
+pxor %xmm0, %xmm0
+movdqa (%rdi), %xmm2
+movdqa (%rsi), %xmm1
+pcmpeqb %xmm1, %xmm0
+pslldq $0xb, %xmm2
+pcmpeqb %xmm1, %xmm2
+psubb %xmm0, %xmm2
+pmovmskb %xmm2, %r9d
+shrl %cl, %edx
+shrl %cl, %r9d
+subl %r9d, %edx
+jne 0x4000a1de35"]
+	1033 -> 1034
+	1033 [label="0x4000a1d0a0
+_______________________
+_______________________
+movdqa (%rdi), %xmm3
+pxor %xmm0, %xmm0
+movq $0x10, %rcx
+movl $5, %r9d
+leaq 5(%rdi), %r10
+andq $0xfff, %r10
+subq $0x1000, %r10
+nopw (%rax, %rax)
+addq $0x10, %r10
+jg 0x4000a1d170"]
+	1034 -> 850
+	1034 [label="0x4000a1d0da
+_______________________
+_______________________
+movdqa (%rsi, %rcx), %xmm1
+movdqa (%rdi, %rcx), %xmm2
+movdqa %xmm2, %xmm4
+psrldq $5, %xmm3
+pslldq $0xb, %xmm2
+por %xmm3, %xmm2
+pcmpeqb %xmm1, %xmm0
+pcmpeqb %xmm2, %xmm1
+psubb %xmm0, %xmm1
+pmovmskb %xmm1, %edx
+subl $0xffff, %edx
+jne 0x4000a1de30"]
+	1037 -> 1038
+	1037 [label="0x4000a1cad0
+_______________________
+_______________________
+movdqa (%rsi), %xmm1
+pxor %xmm0, %xmm0
+pcmpeqb %xmm1, %xmm0
+pcmpeqb (%rdi), %xmm1
+psubb %xmm0, %xmm1
+pmovmskb %xmm1, %r9d
+shrl %cl, %edx
+shrl %cl, %r9d
+subl %r9d, %edx
+jne 0x4000a1de35"]
+	1038 -> 1039
+	1038 [label="0x4000a1caf7
+_______________________
+_______________________
+movq $0x10, %rcx
+movq $0x10, %r9
+pxor %xmm0, %xmm0
+nopl (%rax)
+movdqa (%rsi, %rcx), %xmm1
+movdqa (%rdi, %rcx), %xmm2
+pcmpeqb %xmm1, %xmm0
+pcmpeqb %xmm2, %xmm1
+psubb %xmm0, %xmm1
+pmovmskb %xmm1, %edx
+subl $0xffff, %edx
+jne 0x4000a1de30"]
+	1039 -> 850
+	1039 [label="0x4000a1cb36
+_______________________
+_______________________
+addq $0x10, %rcx
+movdqa (%rsi, %rcx), %xmm1
+movdqa (%rdi, %rcx), %xmm2
+pcmpeqb %xmm1, %xmm0
+pcmpeqb %xmm2, %xmm1
+psubb %xmm0, %xmm1
+pmovmskb %xmm1, %edx
+subl $0xffff, %edx
+jne 0x4000a1de30"]
+	1040 -> 1041
+	1040 [label="0x4000a1daa0
+_______________________
+_______________________
+movdqa (%rdi), %xmm3
+pxor %xmm0, %xmm0
+movq $0x10, %rcx
+movl $0xd, %r9d
+leaq 0xd(%rdi), %r10
+andq $0xfff, %r10
+subq $0x1000, %r10
+nopw (%rax, %rax)
+addq $0x10, %r10
+jg 0x4000a1db70"]
+	1041 -> 850
+	1041 [label="0x4000a1dada
+_______________________
+_______________________
+movdqa (%rsi, %rcx), %xmm1
+movdqa (%rdi, %rcx), %xmm2
+movdqa %xmm2, %xmm4
+psrldq $0xd, %xmm3
+pslldq $3, %xmm2
+por %xmm3, %xmm2
+pcmpeqb %xmm1, %xmm0
+pcmpeqb %xmm2, %xmm1
+psubb %xmm0, %xmm1
+pmovmskb %xmm1, %edx
+subl $0xffff, %edx
+jne 0x4000a1de30"]
+	1128 -> 1129
+	1128 [label="0x4000a1dbe0
+_______________________
+_______________________
+movdqa (%rdi), %xmm3
+pxor %xmm0, %xmm0
+movq $0x10, %rcx
+movl $0xe, %r9d
+leaq 0xe(%rdi), %r10
+andq $0xfff, %r10
+subq $0x1000, %r10
+nopw (%rax, %rax)
+addq $0x10, %r10
+jg 0x4000a1dcb0"]
+	1129 -> 850
+	1129 [label="0x4000a1dc1a
+_______________________
+_______________________
+movdqa (%rsi, %rcx), %xmm1
+movdqa (%rdi, %rcx), %xmm2
+movdqa %xmm2, %xmm4
+psrldq $0xe, %xmm3
+pslldq $2, %xmm2
+por %xmm3, %xmm2
+pcmpeqb %xmm1, %xmm0
+pcmpeqb %xmm2, %xmm1
+psubb %xmm0, %xmm1
+pmovmskb %xmm1, %edx
+subl $0xffff, %edx
+jne 0x4000a1de30"]
+	1362 -> 1363
+	1362 [label="0x4000a1d2f0
+_______________________
+_______________________
+pxor %xmm0, %xmm0
+movdqa (%rdi), %xmm2
+movdqa (%rsi), %xmm1
+pcmpeqb %xmm1, %xmm0
+pslldq $9, %xmm2
+pcmpeqb %xmm1, %xmm2
+psubb %xmm0, %xmm2
+pmovmskb %xmm2, %r9d
+shrl %cl, %edx
+shrl %cl, %r9d
+subl %r9d, %edx
+jne 0x4000a1de35"]
+	1363 -> 1364
+	1363 [label="0x4000a1d320
+_______________________
+_______________________
+movdqa (%rdi), %xmm3
+pxor %xmm0, %xmm0
+movq $0x10, %rcx
+movl $7, %r9d
+leaq 7(%rdi), %r10
+andq $0xfff, %r10
+subq $0x1000, %r10
+nopw (%rax, %rax)
+addq $0x10, %r10
+jg 0x4000a1d3f0"]
+	1364 -> 850
+	1364 [label="0x4000a1d35a
+_______________________
+_______________________
+movdqa (%rsi, %rcx), %xmm1
+movdqa (%rdi, %rcx), %xmm2
+movdqa %xmm2, %xmm4
+psrldq $7, %xmm3
+pslldq $9, %xmm2
+por %xmm3, %xmm2
+pcmpeqb %xmm1, %xmm0
+pcmpeqb %xmm2, %xmm1
+psubb %xmm0, %xmm1
+pmovmskb %xmm1, %edx
+subl $0xffff, %edx
+jne 0x4000a1de30"]
+}

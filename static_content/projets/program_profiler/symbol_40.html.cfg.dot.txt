@@ -1,0 +1,69 @@
+digraph {
+	node [shape=box]
+	306 -> 307
+	306 -> 308
+	306 [label="0x4000a1c3a0
+_______________________
+_______________________
+testq %rdi, %rdi
+pushq %r15
+movq %r9, %r15
+pushq %r14
+movl %ecx, %r14d
+pushq %r13
+movq %rsi, %r13
+pushq %r12
+movq %rdi, %r12
+pushq %rbp
+pushq %rbx
+je 0x4000a1c3f0"]
+	307 -> 308
+	307 -> 639
+	307 [label="0x4000a1c3f0
+_______________________
+_______________________
+testb $4, %dl
+je 0x4000a1c3bb"]
+	308 -> 640
+	308 [label="0x4000a1c3bb
+_______________________
+_______________________
+movslq %r8d, %rbp
+movslq %edx, %rbx"]
+	309 -> 310
+	309 [label="0x4000a1c3da
+_______________________
+_______________________
+cmpq $-0x1000, %rax
+ja 0x4000a1c430"]
+	310 [label="0x4000a1c3e2
+_______________________
+_______________________
+popq %rbx
+popq %rbp
+popq %r12
+popq %r13
+popq %r14
+popq %r15
+retq "]
+	639 -> 640
+	639 [label="0x4000a1c3f5
+_______________________
+_______________________
+testb $1, 0x20995e(%rip)
+movslq %r8d, %rbp
+movslq %edx, %rbx
+je 0x4000a1c3c1"]
+	640 -> 309
+	640 [label="0x4000a1c3c1
+_______________________
+_______________________
+movq %r15, %r9
+movq %rbp, %r8
+movslq %r14d, %r10
+movq %rbx, %rdx
+movq %r13, %rsi
+movq %r12, %rdi
+movl $9, %eax
+syscall "]
+}

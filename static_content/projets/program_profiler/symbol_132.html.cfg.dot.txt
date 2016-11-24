@@ -1,0 +1,12 @@
+digraph {
+	node [shape=box]
+	1339 [label="0x4000cb5fb0
+_______________________
+_______________________
+movq %rsi, %rdx
+movl 0x70(%rdi), %esi
+movl $1, %edi
+jmp 0x4000d200a0
+_______________________
+CALL __fxstat64"]
+}

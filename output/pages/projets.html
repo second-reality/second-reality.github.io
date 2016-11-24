@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<title>Second Reality &mdash; Projets</title>
+		<meta charset="utf-8" />
+		<link rel="profile" href="http://gmpg.org/xfn/11" />
+		<link rel="stylesheet" type="text/css" href="../theme/css/style.css" />
+		<link rel='stylesheet' id='oswald-css'  href='http://fonts.googleapis.com/css?family=Oswald&#038;ver=3.3.2' type='text/css' media='all' />
+		<style type="text/css">
+			body.custom-background { background-color: #f5f5f5; }
+		</style>
+		<link rel="alternate" type="application/atom+xml"
+			title="Second Reality — Flux Atom"
+			href="../" /> 
+		<!--[if lte IE 8]><script src="../theme/js/html5shiv.js"></script><![endif]-->
+</head>
+
+<body class="home blog custom-background " >
+	<div id="container">
+		<div id="header">
+				<h1 id="site-title"><a href="..">Second Reality</a></h1>
+		</div><!-- /#banner -->
+		
+		<div id="menu">
+			<div class="menu-navigation-container">
+				<ul id="menu-navigation" class="menu">
+						<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="../pages/bonus.html">Bonus</a></li>
+						<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="../pages/contact.html">Contact</a></li>
+						<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="../pages/cv.html">CV</a></li>
+						<li class="active" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="../pages/projets.html">Projets</a></li>
+						<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="../category/welcome.html">welcome</a></li>
+
+				</ul>
+			</div> <!--/#menu-navigation-container-->
+		</div><!-- /#menu -->
+		
+		<div class="page-title">
+		</div>
+	
+		<div id="contents">
+<div class="page type-page status-publish hentry" id="post">
+	<div class="entry-meta">
+		<!-- <div class="comments"><a href="../pages/projets.html#disqus_thread" title="Comment on Projets">Leave a comment</a></div> -->
+		<span class="cat-links"></span>
+	</div> <!-- /#entry-meta -->
+	<div class="main">
+		<h2 class="entry-title"><a href="../pages/projets.html" title="Permalink to Projets" rel="bookmark">Projets</a></h2>
+		<div class="entry-content">
+			<p>Voici les projets auxquels j'ai participé depuis 2009.</p>
+<p><em>Les projets n'indiquant pas un nombre de participants ont été réalisés seuls.</em></p>
+<div class="section" id="program-profiler-juin-decembre-2017-travail-chez-inria">
+<h2>Program Profiler: Juin-Décembre 2017 (travail chez INRIA)</h2>
+<p>Développement d'un outil de profiling basé sur l'instrumentation de binaire via
+QEMU ou DynamoRIO.</p>
+<p>Le code est disponible sur <a class="reference external" href="https://github.com/second-reality/qemu/">github</a>, sur la branche dev.</p>
+<p>Voir le <a class="reference external" href="https://github.com/second-reality/qemu/tree/dev/tcg/plugins/cpp/README.rst">README</a> suivant pour une explication plus complète.</p>
+<p>Un exemple de sortie de program_profiler est disponible <a class="reference external" href="../content/projets/program_profiler/index.html">ici</a>, pour le programme
+<a class="reference external" href="../content/projets/program_profiler/main.c">suivant</a>.</p>
+<p>Utilisation du C++14, Python.
+Travail sous Linux uniquement.</p>
+</div>
+<div class="section" id="simulation-de-circuits-octobre-2016-janvier-2017-travail-chez-mentor-graphics">
+<h2>Simulation de circuits: Octobre 2016 - Janvier 2017 (travail chez Mentor Graphics)</h2>
+<p>Développement d'un outil de simulation de circuits électroniques.</p>
+<p>Équipe de 5 personnes.</p>
+<p>Utilisation du C++14, Bash, Boost, CMake.
+Travail sous Linux uniquement.</p>
+</div>
+<div class="section" id="traitement-d-image-fevrier-2016-octobre-2016-travail-chez-thales-electron-devices">
+<h2>Traitement d'image: Février 2016 - Octobre 2016 (travail chez Thales Electron Devices)</h2>
+<p>Développeur (seul) sur un projet de R&amp;D visant à porter une chaîne de traitement
+d'images sur GPGPU (via CUDA/OpenCL). L'enjeu est de réduire la consommation de
+l'unité de traitement. Plusieurs boards ont été évaluées (principalement à base
+de processeurs ARM et de différents GPGPU (DSP, GPU)).  Une partie importante du
+travail a été&nbsp;d'optimiser le code.</p>
+<p>Écriture d'algorithmes de traitement d'images (portage depuis une version CPU ou
+de spécifications). Portage de CUDA vers OpenCL (à performance égale sur les
+plateformes offrant les deux) avec une solution technique garantissant
+l'utilisation du même code (via des macros - dans le style de Boost.Compute).
+Code de communication réseau pour la transmission d'images. Mise en place de
+chaînes de cross compilation, d'un script de build, de déploiement, de test et
+de profiling.</p>
+<p>Autoformation CUDA/OpenCL et sur les problématiques de programmation sur GPGPU.</p>
+<p>Utilisation du C++14, Cuda(7), OpenCL(1.2), Bash, Boost (Asio), SDL, CMake.
+Travail sous Linux uniquement. Développement x86_64, arm, et arm64.</p>
+</div>
+<div class="section" id="sphernet-aout-2015-janvier-2016-travail-au-crd-nicolas-bourbaki">
+<h2>SpherNet : Août 2015 - Janvier 2016 (travail au CRD Nicolas Bourbaki)</h2>
+<p>Développement d'une solution de communication complète pour les objets connectés
+(réseau LoRa) dans une équipe de 6 personnes.</p>
+<p>Travail d'architecture et de développement sur tous les éléments de la chaîne,
+de l'antenne jusqu'au cloud. Développement orienté réseau (modèle asynchrone
+monothreadé) avec la scalabilité horizontale en ligne de mire.</p>
+<p>Utilisation du C++14, de Boost (Asio, Log, UnitTest). Travail sous Linux
+uniquement.</p>
+<p>Équipe de 6 personnes.</p>
+<p>Arrêt soudain du projet avec la liquidation totale de la société.</p>
+</div>
+<div class="section" id="polyspace-configure-fevrier-decembre-2013-travail-chez-mathworks">
+<h2>Polyspace-configure : Février - Décembre 2013 (travail chez MathWorks)</h2>
+<p>Réalisation d'un outil nommé polyspace-configure permettant de détecter depuis une chaîne de build la liste
+des fichiers compilés, leurs options de compilation ainsi que le linkage de ceux-ci, le tout automatiquement.
+Cet outil permet de générer un fichier de projet automatiquement pour polyspace depuis une commande telle que make.
+Lors de mon départ, l'outil était capable de lancer une analyse pour n'importe quel paquet source debian (wheezy).</p>
+<p>Cette nouvelle approche de la configuration de l'analyseur statique Polyspace a ouvert la voie à de nouveaux marchés.
+Jusqu'à présent, le configuration d'un projet était longue et fastidieuse et demandait souvent une personne du support afin de converger.</p>
+<p>Cet outil s'appuye sur des mécanismes d'injection de code (LD_PRELOAD sous Linux, DYLD_INSERT_LIBRARIES sous MacOS ainsi
+que de l'IAT Patching sous windows). Il supporte les OS Linux/MacOS et WindowsXP/Vista/7/8 en version 32 et 64 bits.</p>
+<p>L'outil fonctionne en hookant une liste prédéfinie de fonctions standard concernant l'exécution de programmes, la création de processus
+et l'accès au filesystem.</p>
+<p>J'ai également développé des heuristiques et méthodes permettant d'obtenir l'environnement de compilation exact d'un compilateur
+quelconque (Visual (cl), Gcc, Clang, Icc sont supportés actuellement), sans s'appuyer sur une connaissance particulière de son fonctionnement,
+ce qui permet de supporter virtuellement tous les compilateurs du marché très facilement.</p>
+<p>Utilisation du C++11, de Boost, de la libicu, de la WinAPI (pour la partie windows).</p>
+<p>Projet Réalisé seul dans le cadre de mon poste d'ingénieur compilation chez MathWorks.</p>
+</div>
+<div class="section" id="sea-fevrier-aout-2011-stage-de-fin-d-etudes-ensimag">
+<h2>SEA : Février - Aout 2011 (Stage de fin d'études Ensimag)</h2>
+<p>Réalisation d'un outil permettant d'analyser (Structural Elf Analyser) un projet afin de représenter
+les dépendances entre les parties de celui-ci. L'analyse est effectuée directement sur les binaires et non pas
+sur les sources. SEA permet aux développeurs de mieux appréhender l'architecture du projet sur lequel ils travaillent ainsi
+que de mieux comprendre l'impact des modifications qu'ils peuvent réaliser.</p>
+<p>Utilisation du C, de XML (libxml2 + xslt), libelf et libdwarf.</p>
+<p>Projet Réalisé dans le cadre de l'Ensimag (stage de fin d'études) au sein
+de l'équipe compilation de STMicroelectronics à Grenoble.</p>
+</div>
+<div class="section" id="yadmake-decembre-2010-janvier-2011">
+<h2>Yadmake : Décembre 2010 - Janvier 2011</h2>
+<p>Réalisation d'un make distribué (Yet Another Distributed Make).</p>
+<p>Utilisation du C++, de MPI et de pthread.</p>
+<p>Yadmake peut fonctionner en mode séquentiel, parallèle centralisé et work-stealing.</p>
+<p>Projet réalisé dans le cadre de L'Ensimag (cours Systèmes distribués).</p>
+<p>2 Participants.</p>
+</div>
+<div class="section" id="bank-octobre-2010">
+<h2>Bank : Octobre 2010</h2>
+<p>Réalisation d'une application web pour la gestion d'une banque.</p>
+<p>Utilisation de J2EE (ejb, jms, web service).</p>
+<p>Projet réalisé dans le cadre de l'Ensimag (cours Applications réparties).</p>
+<p>2 Participants.</p>
+</div>
+<div class="section" id="qtvocal-juin-septembre-2010-stage-de-deuxieme-annee-ensimag">
+<h2>QtVocal : Juin - Septembre 2010 (Stage de deuxième année Ensimag)</h2>
+<p>Conception, implémentation et validation d'un module de reconnaissance vocale pour une application de chirurgie assistée par ordinateur.</p>
+<p>Ce module utilise la SpeechAPI de Microsoft ainsi que le framework Qt. Il a été réalisé en C++.</p>
+<p>L'idée est de proposer aux développeurs de l'Orthopilot (système de navigation pour les chirurgiens) un moyen simple et
+rapide d'intégrer un contrôle vocal à leurs applications Qt existantes. L'interface du module s'intègre de façon
+transparente dans Qt (grâce aux mécanismes de signaux/slots) et celui-ci gère tous les détails de bas niveau
+concernant la reconnaissance vocale (création, erreurs, grammaire, threads, ...).</p>
+<p>J'ai eu la chance d'assister à une opération chirurgicale de la mâchoire.</p>
+<p>Ce projet a été réalisé dans le cadre de mon stage de deuxième année Ensimag (3 mois) au sein de l'entreprise Aesculap à Echirolles.</p>
+<p>Accéder à des captures de l'application <a class="reference external" href="../drafts/qtvocal.html">QtVocal</a></p>
+</div>
+<div class="section" id="kernel-mai-juin-2010">
+<h2>Kernel : Mai - Juin 2010</h2>
+<p>Réalisation d'un noyau d'OS multitâche préemptif pour architecture x86.</p>
+<p>Gestion de processus/files de message/clavier/temps/niveaux de privilèges.</p>
+<p>Utilisation du C, asm x86 (GNU), des bibles Intel.</p>
+<p>Projet à temps plein réalisé dans le cadre de l'Ensimag (Projet de Spécialité - 1 mois).</p>
+<p>2 Participants.</p>
+</div>
+<div class="section" id="tetramaster-avril-2010">
+<h2>TetraMaster : Avril 2010</h2>
+<p>Réalisation d'un jeu de cartes (Tetra Master, tiré de Final Fantasy 9).</p>
+<p>Modélisation Objet (UML) du jeu. Implémentation en C++.</p>
+<p>Projet réalisé dans le cadre de l'Ensimag (cours ACVL).</p>
+<p>4 Participants.</p>
+</div>
+<div class="section" id="gestionbibliotheque-mars-2010">
+<h2>GestionBibliothèque : Mars 2010</h2>
+<p>Réalisation d'une application web pour la gestion d'une bibliothèque.</p>
+<p>Utilisation de PHP (Zend Framework, MVC) et MySQL.</p>
+<p>Projet réalisé dans le cadre de l'Ensimag (cours Applis Web).</p>
+<p>2 Participants.</p>
+</div>
+<div class="section" id="mandel-fevrier-2010">
+<h2>Mandel : Février 2010</h2>
+<p>Réalisation d'un explorateur de l'ensemble de Mandelbrot/Julia multithreadé (Windows/Linux).</p>
+<p>Utilisation du C, de la SDL et de pthreads.</p>
+<p>Projet réalisé pour mon plaisir personnel.</p>
+<p>Accéder au dépôt du programme (sources, exec, exemples) <a class="reference external" href="https://github.com/second-reality/mandel">Mandelbrot</a></p>
+</div>
+<div class="section" id="compilateur-expresso-janvier-2010">
+<h2>Compilateur Expresso : Janvier 2010</h2>
+<p>Réalisation d'un compilateur pour le langage Deca (mini-java)</p>
+<p>Découverte des techniques de compilation, de validation et de gestion de projet.</p>
+<p>Utilisation d'Ayacc, Aflex, Ada.</p>
+<p>Projet à temps plein réalisé dans le cadre de l'Ensimag (Projet GL sur 1 mois).</p>
+<p>4 Participants.</p>
+<p>Accéder à la publicité <a class="reference external" href="../drafts/expresso.html">Expresso</a></p>
+</div>
+<div class="section" id="gestionreservations-novembre-decembre-2009">
+<h2>GestionReservations : Novembre - Décembre 2009</h2>
+<p>Réalisation d'une application java pour gérer des réservations dans un centre de vacances.</p>
+<p>Modélisation Base de données + utilisation JDBC + utilisation swing/awt.</p>
+<p>Projet réalisé dans le cadre de l'Ensimag (cours SGBD).</p>
+<p>4 Participants.</p>
+</div>
+<div class="section" id="gestionclients-juillet-2009">
+<h2>GestionClients : Juillet 2009</h2>
+<p>Réalisation d'une application Excel (vba) de gestion de clientèle.</p>
+<p>Conception de l'interface + découverte du langage visual basic.</p>
+<p>Projet réalisé dans le cadre de mon travail à Decathlon La Tronche durant mon temps libre.</p>
+<p>Application utilisée par plusieurs rayons dans les Decathlon de La tronche et d'Echirolles.</p>
+<p>Accéder au programme (source, manuel) <a class="reference external" href="../drafts/gestionclients.html">GestionClients</a></p>
+</div>
+<div class="section" id="assembleur-mips-juin-2009">
+<h2>Assembleur MIPS : Juin 2009</h2>
+<p>Réalisation du back-end d'un assembleur pour architecture MIPS.</p>
+<p>Conception du back-end, découverte des mécanismes de création d'exécutables.</p>
+<p>Utilisation du C et du format ELF.</p>
+<p>Projet réalisé à temps plein dans le cadre de l'Ensimag (Projet C sur 10 jours).</p>
+<p>3 Participants.</p>
+</div>
+<div class="section" id="whereis-avril-2009">
+<h2>Whereis : Avril 2009</h2>
+<p>Réalisation d'une interface graphique pour l'utilitaire WhereIs déployé à l'Ensimag qui permet de localiser une personne.</p>
+<p>Conception de l'interface et découverte du langage Tcl. Utilisation de la bibliothèque Tk.</p>
+<p>Projet réalisé dans le cadre de l'Ensimag (cours IUG).</p>
+<p>2 Participants.</p>
+</div>
+<div class="section" id="photoglass-fevrier-avril-2009">
+<h2>PhotoGlass : Février - Avril 2009</h2>
+<p>Réalisation d'un mini logiciel de dessin vectoriel.</p>
+<p>Conception de l'interface et implémentation d'algorithmes de tracés.
+Utilisation d'Ada et de la SDL.</p>
+<p>Projet réalisé dans le cadre de l'Ensimag (cours IUG).</p>
+<p>3 Participants.</p>
+<p>Accéder au programme (exec, manuel, exemple) <a class="reference external" href="../drafts/photoglass.html">PhotoGlass</a></p>
+</div>
+<div class="section" id="mini-assembleur-pour-projet-microprocesseur-mars-2009">
+<h2>Mini-Assembleur pour projet Microprocesseur :  Mars 2009</h2>
+<p>Realisation d'un mini assembleur afin d'accélerer la conception du microprocesseur.</p>
+<p>Conception complète du programme. Utilisation d'Ada.</p>
+<p>Projet réalisé en temps libre.</p>
+</div>
+<div class="section" id="microprocesseur-16bits-fevrier-avril-2009">
+<h2>Microprocesseur 16bits : Fevrier - Avril 2009</h2>
+<p>Realisation d'un microprocesseur 16bits sur carte FPGA (description en VHDL).</p>
+<p>Réalisation du cahier des charges + gestion des interruptions.</p>
+<p>Projet réalisé dans le cadre de l'Ensimag (cours Architecture2).</p>
+<p>2 Participants.</p>
+</div>
+
+		</div> <!-- /#entry-content -->
+	</div> <!-- /#main -->
+</div> <!-- /#post -->
+		</div>
+		
+		<div id="footer">
+		</div><!-- /#footer -->
+	</div><!-- /#container -->
+	<div style="display:none"></div>
+</body>
+</html>

@@ -1,0 +1,103 @@
+digraph {
+	node [shape=box]
+	134 -> 135
+	134 -> 275
+	134 [label="0x4000a1aaf0
+_______________________
+_______________________
+movq 0x20c5b9(%rip), %rcx
+testq %rcx, %rcx
+je 0x4000a1abd8"]
+	135 -> 136
+	135 [label="0x4000a1abd8
+_______________________
+_______________________
+movq 0x20b0d9(%rip), %rax
+leaq 0x20c56a(%rip), %rdx
+leaq -1(%rax, %rdx), %rcx
+negq %rax
+andq %rax, %rcx
+movq %rcx, 0x20c4b8(%rip)
+jmp 0x4000a1ab07"]
+	136 -> 137
+	136 -> 304
+	136 [label="0x4000a1ab07
+_______________________
+_______________________
+addq $0xf, %rdx
+andq $0xfffffff0, %rdx
+leaq (%rdx, %rdi), %rax
+movq %rdx, 0x20c59e(%rip)
+cmpq %rcx, %rax
+jae 0x4000a1ab2e"]
+	137 -> 138
+	137 [label="0x4000a1ab1f
+_______________________
+_______________________
+movq %rdx, %rcx
+negq %rcx
+cmpq %rcx, %rdi
+jb 0x4000a1abb8"]
+	138 [label="0x4000a1abb8
+_______________________
+_______________________
+movq %rax, 0x20c4f9(%rip)
+movq %rdx, 0x20c4e2(%rip)
+movq %rdx, %rax
+retq "]
+	275 -> 136
+	275 [label="0x4000a1ab00
+_______________________
+_______________________
+movq 0x20c5b1(%rip), %rdx"]
+	304 -> 305
+	304 [label="0x4000a1ab2e
+_______________________
+_______________________
+pushq %rbp
+pushq %rbx
+subq $8, %rsp
+movq 0x20b17d(%rip), %rax
+leaq -1(%rax, %rdi), %rbx
+movq %rax, %rdx
+negq %rdx
+andq %rdx, %rbx
+jne 0x4000a1ab54"]
+	305 -> 311
+	305 [label="0x4000a1ab54
+_______________________
+_______________________
+addq %rax, %rbx
+xorl %r9d, %r9d
+movq %rdi, %rbp
+movl $0xffffffff, %r8d
+xorl %edi, %edi
+movl $0x22, %ecx
+movl $3, %edx
+movq %rbx, %rsi
+callq 0x4000a1c3a0
+_______________________
+CALL 0x4000a1c3a0"]
+	311 -> 312
+	311 [label="0x4000a1ab77
+_______________________
+_______________________
+cmpq $0xff, %rax
+je 0x4000a1abd0"]
+	312 [label="0x4000a1ab7d
+_______________________
+_______________________
+cmpq 0x20c52c(%rip), %rax
+movq %rax, %rdx
+cmoveq 0x20c529(%rip), %rdx
+addq %rbx, %rax
+movq %rax, 0x20c517(%rip)
+leaq (%rdx, %rbp), %rax
+movq %rdx, 0x20c504(%rip)
+movq %rax, 0x20c50d(%rip)
+addq $8, %rsp
+movq %rdx, %rax
+popq %rbx
+popq %rbp
+retq "]
+}

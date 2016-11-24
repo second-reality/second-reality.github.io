@@ -1,0 +1,58 @@
+digraph {
+	node [shape=box]
+	104 -> 105
+	104 [label="0x4000a1df70
+_______________________
+_______________________
+pxor %xmm0, %xmm0
+pxor %xmm1, %xmm1
+pxor %xmm2, %xmm2
+pxor %xmm3, %xmm3
+movq %rdi, %rax
+movq %rdi, %rcx
+andq $0xfff, %rcx
+cmpq $0xfcf, %rcx
+ja 0x4000a1e000"]
+	105 -> 106
+	105 -> 508
+	105 [label="0x4000a1df96
+_______________________
+_______________________
+movdqu (%rax), %xmm4
+pcmpeqb %xmm0, %xmm4
+pmovmskb %xmm4, %edx
+testl %edx, %edx
+je 0x4000a1dfaa"]
+	106 [label="0x4000a1dfa6
+_______________________
+_______________________
+bsfl %edx, %eax
+retq "]
+	508 -> 509
+	508 [label="0x4000a1dfaa
+_______________________
+_______________________
+andq $0xfffffff0, %rax
+pcmpeqb 0x10(%rax), %xmm1
+pcmpeqb 0x20(%rax), %xmm2
+pcmpeqb 0x30(%rax), %xmm3
+pmovmskb %xmm1, %edx
+pmovmskb %xmm2, %r8d
+pmovmskb %xmm3, %ecx
+shlq $0x10, %rdx
+shlq $0x10, %rcx
+orq %r8, %rcx
+shlq $0x20, %rcx
+orq %rcx, %rdx
+movq %rdi, %rcx
+xorq %rax, %rcx
+andq $0xffffffc0, %rax
+sarq %cl, %rdx
+testq %rdx, %rdx
+je 0x4000a1e070"]
+	509 [label="0x4000a1dff2
+_______________________
+_______________________
+bsfq %rdx, %rax
+retq "]
+}

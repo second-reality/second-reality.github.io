@@ -1,0 +1,28 @@
+digraph {
+	node [shape=box]
+	377 -> 725
+	377 [label="0x4000a10140
+_______________________
+_______________________
+pushq %rbx
+movq %rdi, %rbx
+movq (%rdi), %rdi
+movl 8(%rbx), %ecx
+movl $1, %eax
+movq 0x18(%rbx), %rsi
+movl 0xc(%rbx), %r8d
+movzbl 0x314(%rdi), %edx
+movq 0x30(%rdi), %r9
+andl $3, %edx
+cmovel %eax, %edx
+movzbl %dl, %edx
+callq 0x4000a0b4e0
+_______________________
+CALL 0x4000a0b4e0"]
+	725 [label="0x4000a10170
+_______________________
+_______________________
+movq %rax, 0x20(%rbx)
+popq %rbx
+retq "]
+}

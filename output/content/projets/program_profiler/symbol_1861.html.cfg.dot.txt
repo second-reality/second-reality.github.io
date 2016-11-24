@@ -1,0 +1,60 @@
+digraph {
+	node [shape=box]
+	1262 -> 1265
+	1262 [label="0x40000006d0
+_______________________
+_______________________
+pushq %r15
+pushq %r14
+movl %edi, %r15d
+pushq %r13
+pushq %r12
+leaq 0x200706(%rip), %r12
+pushq %rbp
+leaq 0x200706(%rip), %rbp
+pushq %rbx
+movq %rsi, %r14
+movq %rdx, %r13
+subq %r12, %rbp
+subq $8, %rsp
+sarq $3, %rbp
+callq 0x40000004f0
+_______________________
+CALL _init"]
+	1265 -> 1266
+	1265 [label="0x4000000701
+_______________________
+_______________________
+testq %rbp, %rbp
+je 0x4000000726"]
+	1266 -> 1270
+	1266 [label="0x4000000706
+_______________________
+_______________________
+xorl %ebx, %ebx
+nopl (%rax, %rax)
+movq %r13, %rdx
+movq %r14, %rsi
+movl %r15d, %edi
+callq *(%r12, %rbx, 8)
+_______________________
+CALL frame_dummy"]
+	1270 -> 1271
+	1270 [label="0x400000071d
+_______________________
+_______________________
+addq $1, %rbx
+cmpq %rbx, %rbp
+jne 0x4000000710"]
+	1271 [label="0x4000000726
+_______________________
+_______________________
+addq $8, %rsp
+popq %rbx
+popq %rbp
+popq %r12
+popq %r13
+popq %r14
+popq %r15
+retq "]
+}
