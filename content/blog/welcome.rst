@@ -1,10 +1,12 @@
 Welcome Stranger !
 ==================
 
-:date: 2019-09-01 13:37
+:date: 2019-10-01 13:37
 :category: welcome
 
 Bienvenue à tous sur le site de Pierrick Bouvier.
+
+Je suis actuellement ingénieur R&D chez AllegroDVT: http://www.allegrodvt.com/
 
 Second Reality?
 ---------------
