@@ -1,7 +1,7 @@
 Welcome Stranger !
 ==================
 
-:date: 2020-01-01 13:37
+:date: 2020-11-01 13:37
 :category: welcome
 
 Bienvenue à tous sur le site de Pierrick Bouvier.
