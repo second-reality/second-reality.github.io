@@ -4,16 +4,83 @@ Projets
 .. toctree::
    :hidden:
 
-   ../projets/expresso.rst
    ../projets/gestionclients.rst
    ../projets/photoglass.rst
    ../projets/qtvocal.rst
 
 Voici quelques projets **marquants** auxquels j'ai participé depuis 2009.
 
+Le but ici est de décrire plus en détails les compétences que j'ai pu
+mettre en oeuvre dans ma carrière.
+
 ----------------
 
-Program Profiler: Juin-Décembre 2017 (travail chez INRIA)
+Please: 2020 (AllegroDVT)
+--------------------------------------
+
+Cela faisait plusieurs années que je rêvais de pouvoir implémenter au sein d'une
+équipe une idée découverte en 2010 chez Mozilla: l'approche "mach".
+
+Mach est un outil disponible avec Firefox permettant de facilement
+builder/tester, ou réaliser toute tâche qu'un développeur a besoin.
+
+Plutôt qu'un wiki complexe (et souvent peu à jour), l'idée est de fournir aux
+développeurs une commande simple qui fait ce qui est nécessaire. Please
+implémente cette philosophie, et la renforce en utilisant docker pour abstraire
+la machine du développeur.
+
+Exemples:
+
+- ./please build-debug
+- ./please build-address-sanitizer
+- ./please format-code
+- ./please generate-streams
+- ...
+
+Ainsi, toute la complexité liée aux outils est abstraite derrière un ensemble
+simple de commandes. Il devient facile d'introduire un nouvel outil, car il est
+n'est pas nécessaire de former toute l'équipe dessus.
+
+Pour partager le code de l'équipe, les bénéfices sont également nombreux. Un
+simple "git clone && ./please ..." suffit sans avoir besoin d'expliquer quoi que
+ce soit.
+
+J'avais formalisé cette idée sur ce `dépôt
+<https://github.com/second-reality/please>`_ il y a quelques années.
+
+Une fois l'outil écrit, implémenter une CI a été très simple et naturel, toute
+l'intelligence étant déjà présente dans "please".
+
+Développement en Bash.
+
+Raptor: 2020-2021 (AllegroDVT)
+-------------------------------------------
+
+Design et réalisation d'un moteur de génération de vidéos afin de couvrir les
+nouveaux standards (VVC, AVS3) et leurs difficultés.
+
+Concrètement, il s'agit d'une interface (API) permettant de décrire un stream
+vidéo, et son contenu, précisément, ou aléatoirement, selon le choix du
+développeur.
+
+Il succède à l'ancien moteur "Rex" implémenté via un DSL (Domain Specific
+Language) présent dans la société. Pour parfaire son intégration, un transpileur
+a été écrit pour passer de ce DSL à la nouvelle interface automatiquement.
+
+Les gains sont:
+
+- une plus grande expressivité (non contraint par un DSL)
+- un mode de debug très poussé disponible sur demande ou automatiquement en cas
+  d'erreur.
+- une rapidité accrue (x5 à x15), importante pour les vidéos en haute
+  résolution
+- facilité d'étendre l'interface pour un nouveau besoin (versus un DSL figé)
+- possibilité de développer des plugins pour extraire de l'information des
+  streams vidéos (analyseur).
+
+Développement en D.
+
+Program Profiler: 2017 (INRIA)
 ---------------------------------------------------------
 
 Développement d'un outil de profiling basé sur l'instrumentation de binaire via
@@ -36,7 +103,7 @@ suivant_.
 Utilisation du C++14, Python.
 Travail sous Linux uniquement.
 
-Traitement d'image: Février 2016 - Octobre 2016 (travail chez Thales Electron Devices)
+Traitement d'image: 2016 (Thales Electron Devices)
 --------------------------------------------------------------------------------------
 
 Développeur (seul) sur un projet de R&D visant à porter une chaîne de traitement
@@ -58,7 +125,7 @@ Autoformation CUDA/OpenCL et sur les problématiques de programmation sur GPGPU.
 Utilisation du C++14, Cuda(7), OpenCL(1.2), Bash, Boost (Asio), SDL, CMake.
 Travail sous Linux uniquement. Développement x86_64, arm, et arm64.
 
-SpherNet : Août 2015 - Janvier 2016 (travail au CRD Nicolas Bourbaki)
+SpherNet : 2015 (CRD Nicolas Bourbaki)
 ---------------------------------------------------------------------
 
 Développement d'une solution de communication complète pour les objets connectés
@@ -75,7 +142,7 @@ uniquement.
 
 Arrêt soudain du projet avec la liquidation totale de la société.
 
-Polyspace-configure : Février - Décembre 2013 (travail chez MathWorks)
+Polyspace-configure : 2013 (MathWorks)
 ----------------------------------------------------------------------
 
 Réalisation d'un outil nommé polyspace-configure permettant de détecter depuis une chaîne de build la liste
@@ -100,7 +167,7 @@ Utilisation du C++11, de Boost, de la libicu, de la WinAPI (pour la partie windo
 
 Projet Réalisé seul dans le cadre de mon poste d'ingénieur compilation chez MathWorks.
 
-SEA : Février - Aout 2011 (Stage de fin d'études Ensimag)
+SEA : 2011 (Stage de fin d'études Ensimag)
 ---------------------------------------------------------
 
 Réalisation d'un outil permettant d'analyser (Structural Elf Analyser) un projet afin de représenter
@@ -113,8 +180,8 @@ Utilisation du C, de XML (libxml2 + xslt), libelf et libdwarf.
 Projet Réalisé dans le cadre de l'Ensimag (stage de fin d'études) au sein
 de l'équipe compilation de STMicroelectronics à Grenoble.
 
-Yadmake : Décembre 2010 - Janvier 2011
---------------------------------------
+Yadmake : fin 2010 (Ensimag)
+----------------------------
 
 Réalisation d'un make distribué (Yet Another Distributed Make).
 
@@ -126,7 +193,7 @@ Projet réalisé dans le cadre de L'Ensimag (cours Systèmes distribués).
 
 2 Participants.
 
-QtVocal : Juin - Septembre 2010 (Stage de deuxième année Ensimag)
+QtVocal : été 2010 (Stage de deuxième année Ensimag)
 -----------------------------------------------------------------
 
 Conception, implémentation et validation d'un module de reconnaissance vocale pour une application de chirurgie assistée par ordinateur.
@@ -146,8 +213,8 @@ Accéder à des captures de l'application QtVocal_
 
 .. _QtVocal: /projets/qtvocal.html
 
-Kernel : Mai - Juin 2010
-------------------------
+Kernel : Juin 2010 (Ensimag)
+----------------------------
 
 Réalisation d'un noyau d'OS multitâche préemptif pour architecture x86.
 
@@ -172,8 +239,8 @@ Accéder au dépôt du programme (sources, exec, exemples) Mandelbrot_
 
 .. _Mandelbrot: https://github.com/second-reality/mandel
 
-Compilateur Expresso : Janvier 2010
------------------------------------
+Compilateur Expresso : Janvier 2010 (Ensimag)
+---------------------------------------------
 
 Réalisation d'un compilateur pour le langage Deca (mini-java)
 
@@ -185,12 +252,8 @@ Projet à temps plein réalisé dans le cadre de l'Ensimag (Projet GL sur 1 mois
 
 4 Participants.
 
-Accéder à la publicité Expresso_
-
-.. _Expresso: /projets/expresso.html
-
-GestionClients : Juillet 2009
------------------------------
+GestionClients : Juillet 2009 (Decathlon)
+-----------------------------------------
 
 Réalisation d'une application Excel (vba) de gestion de clientèle.
 
@@ -204,8 +267,8 @@ Accéder au programme (source, manuel) GestionClients_
 
 .. _GestionClients: /projets/gestionclients.html
 
-Assembleur MIPS : Juin 2009
----------------------------
+Assembleur MIPS : Juin 2009 (Ensimag)
+-------------------------------------
 
 Réalisation du back-end d'un assembleur pour architecture MIPS.
 
@@ -217,8 +280,8 @@ Projet réalisé à temps plein dans le cadre de l'Ensimag (Projet C sur 10 jour
 
 3 Participants.
 
-PhotoGlass : Février - Avril 2009
----------------------------------
+PhotoGlass : Février - Avril 2009 (Ensimag)
+-------------------------------------------
 
 Réalisation d'un mini logiciel de dessin vectoriel.
 
@@ -233,8 +296,8 @@ Accéder au programme (exec, manuel, exemple) PhotoGlass_
 
 .. _PhotoGlass: /projets/photoglass.html
 
-Mini-Assembleur pour projet Microprocesseur :  Mars 2009
---------------------------------------------------------
+Mini-Assembleur pour projet Microprocesseur :  Mars 2009 (Ensimag)
+------------------------------------------------------------------
 
 Realisation d'un mini assembleur afin d'accélerer la conception du microprocesseur.
 
@@ -242,8 +305,8 @@ Conception complète du programme. Utilisation d'Ada.
 
 Projet réalisé en temps libre.
 
-Microprocesseur 16bits : Fevrier - Avril 2009
----------------------------------------------
+Microprocesseur 16bits : début 2009 (Ensimag)
+-------------------------------------------------------
 
 Realisation d'un microprocesseur 16bits sur carte FPGA (description en VHDL).
 
