@@ -1,0 +1,35 @@
+digraph {
+	node [shape=box]
+	896 -> 897
+	896 [label="0x4000a14c50
+_______________________
+_______________________
+pushq %rbp
+pushq %rbx
+movq %rdi, %rbx
+movl $0x10, %esi
+subq $8, %rsp
+movq 0x2122fb(%rip), %rdi
+leaq 0xe(%rdi), %rbp
+addq $0x10, %rdi
+callq 0x4000a03a50
+_______________________
+CALL 0x4000a03a50"]
+	897 -> 898
+	897 [label="0x4000a14c72
+_______________________
+_______________________
+testq %rax, %rax
+je 0x4000a14c90"]
+	898 [label="0x4000a14c77
+_______________________
+_______________________
+leaq 0x10(%rax), %rdx
+movq %rbp, (%rax)
+movq %rbx, %rax
+movq %rdx, 8(%rbx)
+addq $8, %rsp
+popq %rbx
+popq %rbp
+retq "]
+}

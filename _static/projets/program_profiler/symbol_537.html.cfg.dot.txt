@@ -1,0 +1,18 @@
+digraph {
+	node [shape=box]
+	1796 -> 1797
+	1796 [label="0x4000cfca10
+_______________________
+_______________________
+movslq %edi, %rdx
+movq 0x2e245e(%rip), %r9
+movl $0xe7, %r8d
+movl $0x3c, %esi
+jmp 0x4000cfca40"]
+	1797 [label="0x4000cfca40
+_______________________
+_______________________
+movq %rdx, %rdi
+movl %r8d, %eax
+syscall "]
+}

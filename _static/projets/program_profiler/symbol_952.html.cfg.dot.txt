@@ -1,0 +1,28 @@
+digraph {
+	node [shape=box]
+	1505 -> 1506
+	1505 [label="0x4000cb8240
+_______________________
+_______________________
+pushq %rbx
+movq %rdi, %rbx
+subq $0x20, %rsp
+movq 0x38(%rdi), %rdi
+movl (%rbx), %eax
+testq %rdi, %rdi
+je 0x4000cb8257"]
+	1506 [label="0x4000cb8257
+_______________________
+_______________________
+movq %rdx, 0x40(%rbx)
+movl %eax, %edx
+andl $0xfffffffffffffffe, %eax
+orl $1, %edx
+testl %ecx, %ecx
+movq %rsi, 0x38(%rbx)
+cmovel %edx, %eax
+movl %eax, (%rbx)
+addq $0x20, %rsp
+popq %rbx
+retq "]
+}

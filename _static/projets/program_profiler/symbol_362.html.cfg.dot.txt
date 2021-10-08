@@ -1,0 +1,55 @@
+digraph {
+	node [shape=box]
+	1474 -> 1475
+	1474 [label="0x4000d29f60
+_______________________
+_______________________
+testq %rdi, %rdi
+pushq %r15
+movq %r9, %r15
+pushq %r14
+movl %ecx, %r14d
+pushq %r13
+movq %rsi, %r13
+pushq %r12
+movq %rdi, %r12
+pushq %rbp
+pushq %rbx
+je 0x4000d29fb0"]
+	1475 -> 1476
+	1475 [label="0x4000d29fb0
+_______________________
+_______________________
+testb $4, %dl
+je 0x4000d29f7b"]
+	1476 -> 1477
+	1476 [label="0x4000d29f7b
+_______________________
+_______________________
+movslq %r8d, %rbp
+movslq %edx, %rbx
+movq %r15, %r9
+movq %rbp, %r8
+movslq %r14d, %r10
+movq %rbx, %rdx
+movq %r13, %rsi
+movq %r12, %rdi
+movl $9, %eax
+syscall "]
+	1477 -> 1478
+	1477 [label="0x4000d29f9a
+_______________________
+_______________________
+cmpq $-0x1000, %rax
+ja 0x4000d2a000"]
+	1478 [label="0x4000d29fa2
+_______________________
+_______________________
+popq %rbx
+popq %rbp
+popq %r12
+popq %r13
+popq %r14
+popq %r15
+retq "]
+}

@@ -1,0 +1,31 @@
+digraph {
+	node [shape=box]
+	1772 -> 1784
+	1772 [label="0x4000cb51a0
+_______________________
+_______________________
+pushq %rbx
+movq %rdi, %rbx
+callq 0x4000cb8610
+_______________________
+CALL 0x4000cb8610"]
+	1784 -> 1785
+	1784 [label="0x4000cb51a9
+_______________________
+_______________________
+testq %rax, %rax
+je 0x4000cb51cd"]
+	1785 [label="0x4000cb51ae
+_______________________
+_______________________
+movq 0x38(%rbx), %rax
+movq %rax, 0x30(%rbx)
+movq %rax, 0x28(%rbx)
+movq %rax, 0x20(%rbx)
+movq %rax, 0x18(%rbx)
+movq %rax, 8(%rbx)
+movq %rax, 0x10(%rbx)
+movq %rbx, %rax
+popq %rbx
+retq "]
+}
