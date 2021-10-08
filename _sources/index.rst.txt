@@ -5,7 +5,7 @@ Bonjour, je suis Pierrick Bouvier.
 
 Je suis actuellement ingénieur R&D chez `AllegroDVT <http://www.allegrodvt.com/>`_.
 
-**Ouvert à une opportunité professionelle pour travailler en Rust.**
+**Ouvert à une opportunité pour travailler en Rust.**
 
 Voici mon `CV <pages/cv.html>`_
 
