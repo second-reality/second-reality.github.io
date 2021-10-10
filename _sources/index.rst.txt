@@ -3,9 +3,9 @@ Bienvenue
 
 Bonjour, je suis Pierrick Bouvier.
 
-Je suis actuellement ingénieur R&D chez `AllegroDVT <http://www.allegrodvt.com/>`_.
+Je suis actuellement ingénieur R&D chez `AllegroDVT <https://www.allegrodvt.com/>`_.
 
-**Ouvert à une opportunité pour travailler en Rust.**
+**Ouvert à une opportunité** pour travailler avec le langage `Rust <https://www.rust-lang.org/>`_.
 
 Voici mon `CV <pages/cv.html>`_
 
@@ -19,7 +19,7 @@ Voici mon `CV <pages/cv.html>`_
 
 ----------
 
-C'est quoi `Second Reality <http://en.wikipedia.org/wiki/Second_Reality>`_?
+C'est quoi `Second Reality <https://en.wikipedia.org/wiki/Second_Reality>`_?
 
 C'est une `démo <https://en.wikipedia.org/wiki/Demoscene>`_
 légendaire qui a montré ce qu'un pc pouvait faire au début des années 1990 .

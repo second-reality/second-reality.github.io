@@ -13,7 +13,7 @@ Disponible en pdf_, HTML_ et reST_ (source).
             $('#cv_generated').load('https://rawgit.com/second-reality/cv/master/cv.html');
     });
     </script>
-    <div id="cv_generated"></div>
+    <div id="cv_generated">Chargement automatique du CV...</div>
 
 .. _HTML: https://rawgit.com/second-reality/cv/master/cv.html
 .. _reST: https://rawgit.com/second-reality/cv/master/cv.rst
