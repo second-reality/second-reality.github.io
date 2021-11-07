@@ -5,8 +5,6 @@ Bonjour, je suis Pierrick Bouvier.
 
 Je suis actuellement ingénieur R&D chez `AllegroDVT <https://www.allegrodvt.com/>`_.
 
-**Ouvert à une opportunité** pour travailler avec le langage `Rust <https://www.rust-lang.org/>`_.
-
 Voici mon `CV <pages/cv.html>`_
 
 .. toctree::
