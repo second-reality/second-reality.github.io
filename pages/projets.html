@@ -165,6 +165,16 @@
 <nav id="bd-toc-nav">
     <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#please-2020-travail-chez-allegrodvt">
+   Please: 2020 (travail chez AllegroDVT)
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#raptor-2020-2021-travail-chez-allegrodvt">
+   Raptor: 2020-2021 (travail chez AllegroDVT)
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#program-profiler-juin-decembre-2017-travail-chez-inria">
    Program Profiler: Juin-Décembre 2017 (travail chez INRIA)
   </a>
@@ -266,6 +276,58 @@
 </div>
 <p>Voici quelques projets <strong>marquants</strong> auxquels j’ai participé depuis 2009.</p>
 <hr class="docutils" />
+<section id="please-2020-travail-chez-allegrodvt">
+<h2>Please: 2020 (travail chez AllegroDVT)<a class="headerlink" href="#please-2020-travail-chez-allegrodvt" title="Permalink to this headline">¶</a></h2>
+<p>Cela faisait plusieurs années que je rêvais de pouvoir implémenter au sein d’une
+équipe une idée découverte en 2010 chez Mozilla: l’approche “mach”.</p>
+<p>Mach est un outil disponible avec Firefox permettant de facilement
+builder/tester, ou réaliser toute tâche qu’un développeur a besoin.</p>
+<p>Plutôt qu’un wiki complexe (et souvent peu à jour), l’idée est de fournir aux
+développeurs une commande simple qui fait ce qui est nécessaire. Please
+implémente cette philosophie, et la renforce en utilisant docker pour abstraire
+la machine du développeur.</p>
+<p>Exemples:</p>
+<ul class="simple">
+<li><p>./please build-debug</p></li>
+<li><p>./please build-address-sanitizer</p></li>
+<li><p>./please format-code</p></li>
+<li><p>./please generate-streams</p></li>
+<li><p>…</p></li>
+</ul>
+<p>Ainsi, toute la complexité liée aux outils est abstraite derrière un ensemble
+simple de commandes. Il devient facile d’introduire un nouvel outil, car il est
+n’est pas nécessaire de former toute l’équipe dessus.</p>
+<p>Pour partager le code de l’équipe, les bénéfices sont également nombreux. Un
+simple “git clone &amp;&amp; ./please …” suffit sans avoir besoin d’expliquer quoi que
+ce soit.</p>
+<p>J’avais formalisé cette idée sur ce <a class="reference external" href="https://github.com/second-reality/please">dépôt</a> il y a quelques années.</p>
+<p>Une fois l’outil écrit, implémenter une CI a été très simple et naturel, toute
+l’intelligence étant déjà présente dans “please”.</p>
+<p>Développement en Bash.</p>
+</section>
+<section id="raptor-2020-2021-travail-chez-allegrodvt">
+<h2>Raptor: 2020-2021 (travail chez AllegroDVT)<a class="headerlink" href="#raptor-2020-2021-travail-chez-allegrodvt" title="Permalink to this headline">¶</a></h2>
+<p>Design et réalisation d’un moteur de génération de vidéos afin de couvrir les
+nouveaux standards (VVC, AVS3) et leurs difficultés.</p>
+<p>Concrètement, il s’agit d’une interface (API) permettant de décrire un stream
+vidéo, et son contenu, précisément, ou aléatoirement, selon le choix du
+développeur.</p>
+<p>Il succède à l’ancien moteur “Rex” implémenté via un DSL (Domain Specific
+Language) présent dans la société. Pour parfaire son intégration, un transpileur
+a été écrit pour passer de ce DSL à la nouvelle interface automatiquement.</p>
+<p>Les gains sont:</p>
+<ul class="simple">
+<li><p>une plus grande expressivité (non contraint par un DSL)</p></li>
+<li><p>un mode de debug très poussé disponible sur demande ou automatiquement en cas
+d’erreur.</p></li>
+<li><p>une rapidité accrue (x5 à x15), importante pour les vidéos en haute
+résolution</p></li>
+<li><p>facilité d’étendre l’interface pour un nouveau besoin (versus un DSL figé)</p></li>
+<li><p>possibilité de développer des plugins pour extraire de l’information des
+streams vidéos (analyseur).</p></li>
+</ul>
+<p>Développement en D.</p>
+</section>
 <section id="program-profiler-juin-decembre-2017-travail-chez-inria">
 <h2>Program Profiler: Juin-Décembre 2017 (travail chez INRIA)<a class="headerlink" href="#program-profiler-juin-decembre-2017-travail-chez-inria" title="Permalink to this headline">¶</a></h2>
 <p>Développement d’un outil de profiling basé sur l’instrumentation de binaire via
