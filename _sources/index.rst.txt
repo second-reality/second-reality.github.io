@@ -1,11 +1,69 @@
-Bienvenue
-=========
+Hello World!
+============
 
-Bonjour, je suis Pierrick Bouvier.
+Bienvenue sur le site de **Pierrick Bouvier** (`CV <pages/cv.html>`_)
 
-Je suis actuellement ingénieur R&D chez `AllegroDVT <https://www.allegrodvt.com/>`_.
+Présentation
+------------
 
-Voici mon `CV <pages/cv.html>`_
+Après un poste d'ingénieur R&D chez `AllegroDVT <https://www.allegrodvt.com/>`_,
+je suis en recherche de mon prochain défi!
+
+L'approche `DevOps <https://en.wikipedia.org/wiki/DevOps>`_ et le langage `Rust
+<https://en.wikipedia.org/wiki/Rust_(programming_language)>`_ sont deux
+thématiques qui m'attirent particulièrement aujourd'hui.
+
+Ces deux sujets ont en commun une approche `"Shift left"
+<https://en.wikipedia.org/wiki/Shift-left_testing>`_, qui consiste à trouver les
+problèmes le plus vite possible dans la chaîne logicielle. Rust, à mes yeux, est
+le premier langage capable de remonter cela directement à l'étape de
+compilation.
+
+Vous pouvez accéder à mon `CV <pages/cv.html>`_
+
+----------
+
+Lectures
+--------
+
+Aimant apprendre de nouvelles choses et les transmettre, j'apprécie la lecture
+de livres techniques me permettant de découvrir de nouvelles approches en
+informatique. C'est un support qui reste pour moi inégalé pour explorer un sujet
+en profondeur.
+
+Parmi ceux qui m'ont le plus influencé dans ma carrière:
+
+- `Continuous Integration <https://martinfowler.com/books/duvall.html>`_, et sa
+  suite logique `Continuous Delivery
+  <https://martinfowler.com/books/continuousDelivery.html>`_: Le DevOps est né
+  ici.
+- `Learning Agile <https://www.oreilly.com/library/view/learning-agile/9781449363819/>`_:
+  Pour enfin comprendre ce que promet l'agile, et comment le mettre en place
+  concrètement. Il permet aussi d'aborder pourquoi certaines équipes échouent
+  (et les solutions associées).
+- `Software Engineering at Google
+  <https://www.oreilly.com/library/view/software-engineering-at/9781492082781/>`_:
+  Un livre qui a fait grand bruit à sa sortie, et qui présente concrètement le
+  processus de développement chez Google. L'approche intellectuelle qui
+  transpire de ce livre est absolument remarquable. Une citation choisie:
+  "Software engineering is programming integrated over time".
+- `Programming Rust
+  <https://www.oreilly.com/library/view/programming-rust-2nd/9781492052586/>`_:
+  LA référence sur Rust. Même si vous n'êtes pas "pratiquant", la présentation
+  des idées fondatrices du langage devrait illuminer tout développeur C/C++. *The
+  hype is true*.
+
+----------
+
+C'est quoi `Second Reality <https://en.wikipedia.org/wiki/Second_Reality>`_?
+
+C'est une `démo <https://en.wikipedia.org/wiki/Demoscene>`_
+légendaire qui a montré ce qu'un pc pouvait faire au début des années 1990. Ce
+site est nommé ainsi en hommage à cet esprit.
+
+.. raw:: html
+
+        <iframe width="420" height="315" src="https://www.youtube.com/embed/8G_aUxbbqWU" frameborder="0" allowfullscreen></iframe>
 
 .. toctree::
    :hidden:
@@ -15,13 +73,3 @@ Voici mon `CV <pages/cv.html>`_
    pages/contact.rst
    pages/bonus.rst
 
-----------
-
-C'est quoi `Second Reality <https://en.wikipedia.org/wiki/Second_Reality>`_?
-
-C'est une `démo <https://en.wikipedia.org/wiki/Demoscene>`_
-légendaire qui a montré ce qu'un pc pouvait faire au début des années 1990 .
-
-.. raw:: html
-
-        <iframe width="420" height="315" src="https://www.youtube.com/embed/8G_aUxbbqWU" frameborder="0" allowfullscreen></iframe>
