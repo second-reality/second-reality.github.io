@@ -26,10 +26,9 @@ Vous pouvez accéder à mon `CV <pages/cv.html>`_
 Lectures
 --------
 
-Aimant apprendre de nouvelles choses et les transmettre, j'apprécie la lecture
-de livres techniques me permettant de découvrir de nouvelles approches en
-informatique. C'est un support qui reste pour moi inégalé pour explorer un sujet
-en profondeur.
+Aimant apprendre et transmettre, j'apprécie les livres techniques me permettant
+de découvrir de nouvelles approches. C'est un support qui reste pour moi inégalé
+pour explorer un sujet en profondeur.
 
 Parmi ceux qui m'ont le plus influencé dans ma carrière:
 
