@@ -15,7 +15,7 @@ thématiques qui m'attirent particulièrement aujourd'hui.
 
 Ces deux sujets ont en commun une approche `"Shift left"
 <https://en.wikipedia.org/wiki/Shift-left_testing>`_, qui consiste à trouver les
-problèmes le plus vite possible dans la chaîne logicielle. Rust, à mes yeux, est
+problèmes le plus tôt possible dans la chaîne logicielle. Rust, à mes yeux, est
 le premier langage capable de remonter cela directement à l'étape de
 compilation.
 
