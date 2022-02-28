@@ -4,7 +4,6 @@ Projets
 .. toctree::
    :hidden:
 
-   ../projets/expresso.rst
    ../projets/gestionclients.rst
    ../projets/photoglass.rst
    ../projets/qtvocal.rst
@@ -252,10 +251,6 @@ Utilisation d'Ayacc, Aflex, Ada.
 Projet à temps plein réalisé dans le cadre de l'Ensimag (Projet GL sur 1 mois).
 
 4 Participants.
-
-Accéder à la publicité Expresso_
-
-.. _Expresso: /projets/expresso.html
 
 GestionClients : Juillet 2009 (Decathlon)
 -----------------------------------------
