@@ -1,7 +1,9 @@
 Hello World!
 ============
 
-Bienvenue sur le site de **Pierrick Bouvier** (`CV <pages/cv.html>`_)
+Bienvenue sur le site de **Pierrick Bouvier**
+
+Vous pouvez accéder `ici à mon CV <pages/cv.html>`_
 
 Présentation
 ------------
@@ -9,48 +11,17 @@ Présentation
 Après un poste d'ingénieur R&D chez `AllegroDVT <https://www.allegrodvt.com/>`_,
 je suis en recherche de mon prochain défi!
 
-L'approche `DevOps <https://en.wikipedia.org/wiki/DevOps>`_ et le langage `Rust
-<https://en.wikipedia.org/wiki/Rust_(programming_language)>`_ sont deux
-thématiques qui m'attirent particulièrement aujourd'hui.
+En plus du développement C++, les deux sujets de fond qui m'intéressent sont:
+
+- L'approche `DevOps <https://en.wikipedia.org/wiki/DevOps>`_
+- le langage `Rust <https://en.wikipedia.org/wiki/Rust_(programming_language)>`_
 
 Ces deux sujets ont en commun une approche `"Shift left"
 <https://en.wikipedia.org/wiki/Shift-left_testing>`_, qui consiste à trouver les
-problèmes le plus tôt possible dans la chaîne logicielle. Rust, à mes yeux, est
-le premier langage capable de remonter cela directement à l'étape de
-compilation.
+problèmes le plus tôt possible dans la chaîne logicielle.
 
-Vous pouvez accéder à mon `CV <pages/cv.html>`_
-
-----------
-
-Lectures
---------
-
-Aimant apprendre et transmettre, j'apprécie les livres techniques me permettant
-de découvrir de nouvelles approches. C'est un support qui reste pour moi inégalé
-pour explorer un sujet en profondeur.
-
-Parmi ceux qui m'ont le plus influencé dans ma carrière:
-
-- `Continuous Integration <https://martinfowler.com/books/duvall.html>`_, et sa
-  suite logique `Continuous Delivery
-  <https://martinfowler.com/books/continuousDelivery.html>`_: Le DevOps est né
-  ici.
-- `Learning Agile <https://www.oreilly.com/library/view/learning-agile/9781449363819/>`_:
-  Pour enfin comprendre ce que promet l'agile, et comment le mettre en place
-  concrètement. Il permet aussi d'aborder pourquoi certaines équipes échouent
-  (et les solutions associées).
-- `Software Engineering at Google
-  <https://www.oreilly.com/library/view/software-engineering-at/9781492082781/>`_:
-  Un livre qui a fait grand bruit à sa sortie, et qui présente concrètement le
-  processus de développement chez Google. L'approche intellectuelle qui
-  transpire de ce livre est absolument remarquable. Une citation choisie:
-  "Software engineering is programming integrated over time".
-- `Programming Rust
-  <https://www.oreilly.com/library/view/programming-rust-2nd/9781492052586/>`_:
-  LA référence sur Rust. Même si vous n'êtes pas "pratiquant", la présentation
-  des idées fondatrices du langage devrait illuminer tout développeur C/C++. *The
-  hype is true*.
+Rust, en supprimant toute une classe de bugs par *design*, est le premier
+langage capable de remonter cela directement à l'étape de compilation.
 
 ----------
 
@@ -68,6 +39,7 @@ site est nommé ainsi en hommage à cet esprit.
    :hidden:
 
    pages/cv.rst
+   pages/lectures.rst
    pages/projets.rst
    pages/contact.rst
    pages/bonus.rst
