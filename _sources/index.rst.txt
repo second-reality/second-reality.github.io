@@ -8,8 +8,11 @@ Vous pouvez accéder `ici à mon CV <pages/cv.html>`_
 Présentation
 ------------
 
-Après un poste d'ingénieur R&D chez `AllegroDVT <https://www.allegrodvt.com/>`_,
-je suis en recherche de mon prochain défi!
+Je suis actuellement Ingénieur Logiciel chez `Linaro <https://www.linaro.org>`_
+sur `Windows on Arm <https://www.linaro.org/windows-on-arm/>`_
+(`@pbo-linaro <https://github.com/pbo-linaro/>`_).
+
+----------
 
 En plus du développement C++, les deux sujets de fond qui m'intéressent sont:
 
