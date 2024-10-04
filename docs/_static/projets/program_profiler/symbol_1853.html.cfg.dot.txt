@@ -1,0 +1,76 @@
+digraph {
+	node [shape=box]
+	1219 -> 1220
+	1219 [label="0x4000cdca80
+_______________________
+_______________________
+pushq %rbx
+movl $0x80000000, %eax
+cpuid 
+cmpl $0xc4, %edi
+jg 0x4000cdcad0"]
+	1220 -> 1221
+	1220 [label="0x4000cdca90
+_______________________
+_______________________
+xorl %edx, %edx
+cmpl $0xbe, %edi
+setg %dl
+subl $0x7ffffffb, %edx
+cmpl %eax, %edx
+ja 0x4000cdcad0"]
+	1221 -> 1222
+	1221 [label="0x4000cdcaa5
+_______________________
+_______________________
+movl %edx, %eax
+cpuid 
+cmpl $0xbb, %edi
+jle 0x4000cdcad8"]
+	1222 -> 1223
+	1222 [label="0x4000cdcab1
+_______________________
+_______________________
+subl $0xbc, %edi
+cmpl $8, %edi
+ja 0x4000cdcc20"]
+	1223 -> 1224
+	1223 -> 1226
+	1223 -> 1228
+	1223 [label="0x4000cdcac0
+_______________________
+_______________________
+leaq 0xc97f9(%rip), %rsi
+movslq (%rsi, %rdi, 4), %rax
+addq %rsi, %rax
+jmpq *%rax"]
+	1224 [label="0x4000cdcb18
+_______________________
+_______________________
+movl %ecx, %eax
+shrl $0xe, %eax
+andl $0x3fc00, %eax
+popq %rbx
+retq "]
+	1226 [label="0x4000cdcb58
+_______________________
+_______________________
+movl %ecx, %edx
+movl $0, %eax
+shrl $6, %edx
+andl $0x3fffc00, %edx
+andb $0xf0, %ch
+cmovneq %rdx, %rax
+popq %rbx
+retq "]
+	1228 [label="0x4000cdcba8
+_______________________
+_______________________
+leal (%rdx, %rdx), %eax
+popq %rbx
+andl $0x7ff80000, %eax
+andb $0xf0, %dh
+movl $0, %edx
+cmoveq %rdx, %rax
+retq "]
+}

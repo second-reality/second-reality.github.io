@@ -1,0 +1,37 @@
+digraph {
+	node [shape=box]
+	49 -> 50
+	49 [label="0x4000a0dff0
+_______________________
+_______________________
+movq 0x298(%rdi), %rax
+testq %rax, %rax
+je 0x4000a0e050"]
+	50 -> 51
+	50 [label="0x4000a0dffc
+_______________________
+_______________________
+movq 8(%rax), %rcx
+movl (%rcx), %edx
+movl %edx, 0x2ec(%rdi)
+movl 8(%rcx), %eax
+movl 4(%rcx), %esi
+leal -1(%rax), %r8d
+testl %eax, %r8d
+jne 0x4000a0e07c"]
+	51 [label="0x4000a0e017
+_______________________
+_______________________
+movl %r8d, 0x2f0(%rdi)
+leaq 0x10(%rcx), %r8
+addl %eax, %eax
+movl 0xc(%rcx), %ecx
+subq %rsi, %rdx
+leaq (%r8, %rax, 4), %rax
+movq %r8, 0x2f8(%rdi)
+movq %rax, 0x300(%rdi)
+leaq (%rax, %rdx, 4), %rax
+movl %ecx, 0x2f4(%rdi)
+movq %rax, 0x308(%rdi)
+retq "]
+}

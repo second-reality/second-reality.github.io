@@ -1,0 +1,77 @@
+digraph {
+	node [shape=box]
+	1289 -> 1290
+	1289 [label="0x4000000520
+_______________________
+_______________________
+jmpq *0x200af2(%rip)
+_______________________
+CALL _IO_printf
+_______________________
+SHARED BLOCK 0x4000000520
+SHARED BLOCK 0x4000c61b30"]
+	1290 -> 1291
+	1290 [label="0x4000000526
+_______________________
+_______________________
+pushq $0
+jmp 0x4000000510
+_______________________
+SHARED BLOCK 0x4000000520
+SHARED BLOCK 0x4000c61b30"]
+	1291 -> 1292
+	1291 [label="0x4000000510
+_______________________
+_______________________
+pushq 0x200af2(%rip)
+jmpq *0x200af4(%rip)
+_______________________
+SHARED BLOCK 0x4000000520
+SHARED BLOCK 0x4000c61b30"]
+	1292 -> 1304
+	1292 [label="0x4000a18df0
+_______________________
+_______________________
+pushq %rbx
+movq %rsp, %rbx
+andq $0xfffffff0, %rsp
+subq $0x240, %rsp
+movq %rax, (%rsp)
+movq %rcx, 8(%rsp)
+movq %rdx, 0x10(%rsp)
+movq %rsi, 0x18(%rsp)
+movq %rdi, 0x20(%rsp)
+movq %r8, 0x28(%rsp)
+movq %r9, 0x30(%rsp)
+fxsave 0x40(%rsp)
+movq 0x10(%rbx), %rsi
+movq 8(%rbx), %rdi
+callq 0x4000a11c70
+_______________________
+CALL 0x4000a11c70
+_______________________
+SHARED BLOCK 0x4000000520
+SHARED BLOCK 0x4000c61b30"]
+	1304 [label="0x4000a18e33
+_______________________
+_______________________
+movq %rax, %r11
+fxrstor 0x40(%rsp)
+movq 0x30(%rsp), %r9
+movq 0x28(%rsp), %r8
+movq 0x20(%rsp), %rdi
+movq 0x18(%rsp), %rsi
+movq 0x10(%rsp), %rdx
+movq 8(%rsp), %rcx
+movq (%rsp), %rax
+movq %rbx, %rsp
+movq (%rsp), %rbx
+addq $0x18, %rsp
+jmpq *%r11
+_______________________
+CALL _IO_printf
+CALL _dl_find_dso_for_object
+_______________________
+SHARED BLOCK 0x4000000520
+SHARED BLOCK 0x4000c61b30"]
+}

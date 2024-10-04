@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Symbol</title>
+        <script src="./ext/js/jquery.min.js"></script>
+        <script src="./ext/datatables/datatables.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="./ext/datatables/datatables.min.css">
+        <script src="./ext/js/svg-pan-zoom.min.js"></script>
+    </head>
+    <body>
+        <style>
+/* avoid spacing in table row with <pre> */
+pre
+{
+    display: inline;
+}
+        </style>
+<a href="index.html">Back to index</a> |
+<a href="symbol_880.html.cfg.dot.txt">control flow graph dot source</a> |
+<a href="symbol_880.html.cfg.dot.txt.svg">control flow graph</a>
+
+<div>
+    <div style="float:left;max-width:40%;">
+        <p>name: _IO_doallocbuf</p>
+        <p>pc: 0x4000cb82a0</p>
+        <p>size: 183</p>
+        <p>file: /usr/lib/x86_64-linux-gnu/libc-2.25.so</p>
+        <p>src: </p>
+        <p>number of times called: 1</p>
+        <p>instructions_executed: 25 (0.0%)</p>
+        <p>instructions_executed_control: 6 (24.0%)</p>
+        <p>instructions_executed_arithmetic_and_logic: 14 (56.0%)</p>
+        <p>instructions_executed_memory: 5 (20.0%)</p>
+        <p>bytes_read: 60 (0.0%)</p>
+        <p>bytes_written: 32 (0.0%)</p>
+        <p>instructions_executed_cumulated: 59328 (0.15%)</p>
+        <p>bytes_read_cumulated: 64780 (0.13%)</p>
+        <p>bytes_written_cumulated: 3743 (0.01%)</p>
+        <p>
+        was called by:
+        <ul>
+            
+            <li><a href="symbol_1686.html">_IO_file_overflow</a></li>
+            
+        </ul>
+        </p>
+        <p>
+        calls:
+        <ul>
+            
+            <li><a href="symbol_1058.html">_IO_file_doallocate</a></li>
+            
+        </ul>
+        </p>
+    </div>
+    <div style="overflow: hidden;height:75vh;" class="svg_div svg_pan">symbol_880.html.cfg.dot.txt.svg</div>
+</div>
+
+<div style="clear:both;"/>
+
+    <div style="float:right;width:64%;">
+        <table class="dyn_table display compact">
+            <thead>
+                <tr>
+                    <th>File</th>
+                    <th>Line</th>
+                    <th>Src</th>
+                    <th>Executed</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </table>
+    </div>
+
+    <div style="float:left;width:35%;">
+        <table class="dyn_table display compact">
+            <thead>
+                <tr>
+                    <th>Pc</th>
+                    <th>Asm</th>
+                    <th>Executed</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr>
+                    <td>0x4000cb82a0</td>
+                    <td class="code"><pre><code>cmpq $0, 0x38(%rdi)</code></pre></td>
+                        <td>True</td>
+                </tr>
+                
+                <tr>
+                    <td>0x4000cb82a5</td>
+                    <td class="code"><pre><code>je 0x4000cb82b0</code></pre></td>
+                        <td>True</td>
+                </tr>
+                
+                <tr>
+                    <td>0x4000cb82a7</td>
+                    <td class="code"><pre><code>retq </code></pre></td>
+                        <td>False</td>
+                </tr>
+                
+                <tr>
+                    <td>0x4000cb82a8</td>
+                    <td class="code"><pre><code>nopl (%rax, %rax)</code></pre></td>
+                        <td>False</td>
+                </tr>
+                
+                <tr>
+                    <td>0x4000cb82b0</td>
+                    <td class="code"><pre><code>pushq %r12</code></pre></td>
+                        <td>True</td>
+                </tr>
+                
+                <tr>
+                    <td>0x4000cb82b2</td>
+                    <td class="code"><pre><code>pushq %rbp</code></pre></td>
+                        <td>True</td>
+                </tr>
+                
+                <tr>
+                    <td>0x4000cb82b3</td>
+                    <td class="code"><pre><code>pushq %rbx</code></pre></td>
+                        <td>True</td>
+                </tr>
+                
+                <tr>
+                    <td>0x4000cb82b4</td>
+                    <td class="code"><pre><code>movl (%rdi), %eax</code></pre></td>
+                        <td>True</td>
+                </tr>
+                
+                <tr>
+                    <td>0x4000cb82b6</td>
+                    <td class="code"><pre><code>movq %rdi, %rbx</code></pre></td>
+                        <td>True</td>
+                </tr>
+                
+                <tr>
+                    <td>0x4000cb82b9</td>
+                    <td class="code"><pre><code>testb $2, %al</code></pre></td>
+                        <td>True</td>
+                </tr>
+                
+                <tr>
+                    <td>0x4000cb82bb</td>
+                    <td class="code"><pre><code>jne 0x4000cb82f0</code></pre></td>
+                        <td>True</td>
+                </tr>
+                
+                <tr>
+                    <td>0x4000cb82bd</td>
+                    <td class="code"><pre><code>movq 0xd8(%rbx), %rbp</code></pre></td>
+                        <td>True</td>
+                </tr>
+                
+                <tr>
+                    <td>0x4000cb82c4</td>
+                    <td class="code"><pre><code>leaq 0x323635(%rip), %rdx</code></pre></td>
+                        <td>True</td>
+                </tr>
+                
+                <tr>
+                    <td>0x4000cb82cb</td>
+                    <td class="code"><pre><code>leaq 0x324396(%rip), %rax</code></pre></td>
+                        <td>True</td>
+                </tr>
+                
+                <tr>
+                    <td>0x4000cb82d2</td>
+                    <td class="code"><pre><code>subq %rdx, %rax</code></pre></td>
+                        <td>True</td>
+                </tr>
+                
+                <tr>
+                    <td>0x4000cb82d5</td>
+                    <td class="code"><pre><code>movq %rbp, %rcx</code></pre></td>
+                        <td>True</td>
+                </tr>
+                
+                <tr>
+                    <td>0x4000cb82d8</td>
+                    <td class="code"><pre><code>subq %rdx, %rcx</code></pre></td>
+                        <td>True</td>
+                </tr>
+                
+                <tr>
+                    <td>0x4000cb82db</td>
+                    <td class="code"><pre><code>cmpq %rcx, %rax</code></pre></td>
+                        <td>True</td>
+                </tr>
+                
+                <tr>
+                    <td>0x4000cb82de</td>
+                    <td class="code"><pre><code>jbe 0x4000cb8350</code></pre></td>
+                        <td>True</td>
+                </tr>
+                
+                <tr>
+                    <td>0x4000cb82e0</td>
+                    <td class="code"><pre><code>movq %rbx, %rdi</code></pre></td>
+                        <td>True</td>
+                </tr>
+                
+                <tr>
+                    <td>0x4000cb82e3</td>
+                    <td class="code"><pre><code>callq *0x68(%rbp)</code></pre></td>
+                        <td>True</td>
+                </tr>
+                
+                <tr>
+                    <td>0x4000cb82e6</td>
+                    <td class="code"><pre><code>cmpl $0xff, %eax</code></pre></td>
+                        <td>True</td>
+                </tr>
+                
+                <tr>
+                    <td>0x4000cb82e9</td>
+                    <td class="code"><pre><code>je 0x4000cb8310</code></pre></td>
+                        <td>True</td>
+                </tr>
+                
+                <tr>
+                    <td>0x4000cb82eb</td>
+                    <td class="code"><pre><code>popq %rbx</code></pre></td>
+                        <td>True</td>
+                </tr>
+                
+                <tr>
+                    <td>0x4000cb82ec</td>
+                    <td class="code"><pre><code>popq %rbp</code></pre></td>
+                        <td>True</td>
+                </tr>
+                
+                <tr>
+                    <td>0x4000cb82ed</td>
+                    <td class="code"><pre><code>popq %r12</code></pre></td>
+                        <td>True</td>
+                </tr>
+                
+                <tr>
+                    <td>0x4000cb82ef</td>
+                    <td class="code"><pre><code>retq </code></pre></td>
+                        <td>True</td>
+                </tr>
+                
+                <tr>
+                    <td>0x4000cb82f0</td>
+                    <td class="code"><pre><code>movl 0xc0(%rdi), %edx</code></pre></td>
+                        <td>False</td>
+                </tr>
+                
+                <tr>
+                    <td>0x4000cb82f6</td>
+                    <td class="code"><pre><code>testl %edx, %edx</code></pre></td>
+                        <td>False</td>
+                </tr>
+                
+                <tr>
+                    <td>0x4000cb82f8</td>
+                    <td class="code"><pre><code>jg 0x4000cb82bd</code></pre></td>
+                        <td>False</td>
+                </tr>
+                
+                <tr>
+                    <td>0x4000cb82fa</td>
+                    <td class="code"><pre><code>leaq 0x84(%rdi), %r12</code></pre></td>
+                        <td>False</td>
+                </tr>
+                
+                <tr>
+                    <td>0x4000cb8301</td>
+                    <td class="code"><pre><code>leaq 0x83(%rdi), %rbp</code></pre></td>
+                        <td>False</td>
+                </tr>
+                
+                <tr>
+                    <td>0x4000cb8308</td>
+                    <td class="code"><pre><code>jmp 0x4000cb832d</code></pre></td>
+                        <td>False</td>
+                </tr>
+                
+                <tr>
+                    <td>0x4000cb830a</td>
+                    <td class="code"><pre><code>nopw (%rax, %rax)</code></pre></td>
+                        <td>False</td>
+                </tr>
+                
+                <tr>
+                    <td>0x4000cb8310</td>
+                    <td class="code"><pre><code>movq 0x38(%rbx), %rdi</code></pre></td>
+                        <td>False</td>
+                </tr>
+                
+                <tr>
+                    <td>0x4000cb8314</td>
+                    <td class="code"><pre><code>leaq 0x84(%rbx), %r12</code></pre></td>
+                        <td>False</td>
+                </tr>
+                
+                <tr>
+                    <td>0x4000cb831b</td>
+                    <td class="code"><pre><code>leaq 0x83(%rbx), %rbp</code></pre></td>
+                        <td>False</td>
+                </tr>
+                
+                <tr>
+                    <td>0x4000cb8322</td>
+                    <td class="code"><pre><code>movl (%rbx), %eax</code></pre></td>
+                        <td>False</td>
+                </tr>
+                
+                <tr>
+                    <td>0x4000cb8324</td>
+                    <td class="code"><pre><code>testq %rdi, %rdi</code></pre></td>
+                        <td>False</td>
+                </tr>
+                
+                <tr>
+                    <td>0x4000cb8327</td>
+                    <td class="code"><pre><code>je 0x4000cb832d</code></pre></td>
+                        <td>False</td>
+                </tr>
+                
+                <tr>
+                    <td>0x4000cb8329</td>
+                    <td class="code"><pre><code>testb $1, %al</code></pre></td>
+                        <td>False</td>
+                </tr>
+                
+                <tr>
+                    <td>0x4000cb832b</td>
+                    <td class="code"><pre><code>je 0x4000cb8340</code></pre></td>
+                        <td>False</td>
+                </tr>
+                
+                <tr>
+                    <td>0x4000cb832d</td>
+                    <td class="code"><pre><code>orl $1, %eax</code></pre></td>
+                        <td>False</td>
+                </tr>
+                
+                <tr>
+                    <td>0x4000cb8330</td>
+                    <td class="code"><pre><code>movq %rbp, 0x38(%rbx)</code></pre></td>
+                        <td>False</td>
+                </tr>
+                
+                <tr>
+                    <td>0x4000cb8334</td>
+                    <td class="code"><pre><code>movq %r12, 0x40(%rbx)</code></pre></td>
+                        <td>False</td>
+                </tr>
+                
+                <tr>
+                    <td>0x4000cb8338</td>
+                    <td class="code"><pre><code>movl %eax, (%rbx)</code></pre></td>
+                        <td>False</td>
+                </tr>
+                
+                <tr>
+                    <td>0x4000cb833a</td>
+                    <td class="code"><pre><code>jmp 0x4000cb82eb</code></pre></td>
+                        <td>False</td>
+                </tr>
+                
+                <tr>
+                    <td>0x4000cb833c</td>
+                    <td class="code"><pre><code>nopl (%rax)</code></pre></td>
+                        <td>False</td>
+                </tr>
+                
+                <tr>
+                    <td>0x4000cb8340</td>
+                    <td class="code"><pre><code>callq 0x4000c61b88</code></pre></td>
+                        <td>False</td>
+                </tr>
+                
+                <tr>
+                    <td>0x4000cb8345</td>
+                    <td class="code"><pre><code>movl (%rbx), %eax</code></pre></td>
+                        <td>False</td>
+                </tr>
+                
+                <tr>
+                    <td>0x4000cb8347</td>
+                    <td class="code"><pre><code>jmp 0x4000cb832d</code></pre></td>
+                        <td>False</td>
+                </tr>
+                
+                <tr>
+                    <td>0x4000cb8349</td>
+                    <td class="code"><pre><code>nopl (%rax)</code></pre></td>
+                        <td>False</td>
+                </tr>
+                
+                <tr>
+                    <td>0x4000cb8350</td>
+                    <td class="code"><pre><code>callq 0x4000cb4a70</code></pre></td>
+                        <td>False</td>
+                </tr>
+                
+                <tr>
+                    <td>0x4000cb8355</td>
+                    <td class="code"><pre><code>jmp 0x4000cb82e0</code></pre></td>
+                        <td>False</td>
+                </tr>
+                
+            </tbody>
+        </table>
+    </div>
+
+    <div style="clear:both;"/>
+        <script>
+    function init() {
+        $('.svg_div').each(function() {
+            var file = this.textContent;
+            this.textContent = '';
+            $(this).load(file, function() {
+                var img = $(this).children('svg');
+                if (img[0] == undefined)
+                    return;
+                img.width('100%').height('100%');
+                if ($(this).hasClass('callgraph_pan'))
+                {
+                    $(this).width('100%').height('75vh');
+                }
+                if ($(this).hasClass('svg_pan'))
+                {
+                    svgPanZoom(img[0], {
+                        minZoom: 0.001,
+                        maxZoom: 1000,
+                        zoomEnabled: true,
+                        controlIconsEnabled: true,
+                        zoomScaleSensitivity: 0.5
+                    });
+                }
+            });
+        });
+        $('.dyn_table').dataTable({
+            paging: false,
+            deferRender: true,
+            responsive: true
+        });
+    };
+window.onload = init;
+</script>
+</body>
+</html>

@@ -1,0 +1,156 @@
+digraph {
+	node [shape=box]
+	1682 -> 1683
+	1682 [label="0x4000a12790
+_______________________
+_______________________
+cmpq $1, %rsi
+je 0x4000a1294d"]
+	1683 -> 1684
+	1683 [label="0x4000a1279a
+_______________________
+_______________________
+pushq %rbp
+xorl %eax, %eax
+movq %rsp, %rbp
+pushq %r15
+pushq %r14
+pushq %r13
+pushq %r12
+pushq %rbx
+subq $0x68, %rsp
+testq %rcx, %rcx
+movq %rdx, -0x50(%rbp)
+leaq (%rsi, %rsi), %rdx
+sete %al
+movq %rsp, -0x88(%rbp)
+movl %eax, %ebx
+movq %rsi, -0x38(%rbp)
+movq %rdi, -0x40(%rbp)
+leaq 0x10(%rdx), %rax
+movl %ebx, -0x44(%rbp)
+xorl %esi, %esi
+movl %ebx, %ebx
+andq $0xfffffff0, %rax
+leal 1(%rbx), %r14d
+subq %rax, %rsp
+movq %rsp, %rdi
+movq %rsp, %r15
+callq 0x4000a1ec80
+_______________________
+CALL 0x4000a1ec80"]
+	1684 -> 1685
+	1684 [label="0x4000a127ed
+_______________________
+_______________________
+jmp 0x4000a1281d"]
+	1685 -> 1686
+	1685 [label="0x4000a1281d
+_______________________
+_______________________
+leaq (%r15, %rbx, 2), %rcx
+movzwl (%rcx), %eax
+leal 1(%rax), %r13d
+movq -0x40(%rbp), %rax
+movw %r13w, (%rcx)
+leaq (%rax, %rbx, 8), %rdi
+movq (%rdi), %r12
+cmpq 0x28(%r12), %r12
+jne 0x4000a127f0"]
+	1686 -> 1687
+	1686 [label="0x4000a1283e
+_______________________
+_______________________
+cmpl $-1, 0x3dc(%r12)
+je 0x4000a127f0
+_______________________
+LOOP 0x4000a1281d"]
+	1687 -> 1688
+	1687 -> 1692
+	1687 [label="0x4000a12849
+_______________________
+_______________________
+movl -0x38(%rbp), %eax
+leal -1(%rax), %edx
+cmpl %edx, -0x44(%rbp)
+jae 0x4000a127f0
+_______________________
+LOOP 0x4000a1281d"]
+	1688 -> 1689
+	1688 [label="0x4000a12854
+_______________________
+_______________________
+movq -0x40(%rbp), %rax
+movl %edx, %r11d
+leaq (%rax, %r11, 8), %r10
+movq (%r10), %r8
+movq 0x3b8(%r8), %rax
+testq %rax, %rax
+je 0x4000a12950
+_______________________
+LOOP 0x4000a1281d"]
+	1689 -> 1690
+	1689 [label="0x4000a12950
+_______________________
+_______________________
+movq 0x3c0(%r8), %rax
+testq %rax, %rax
+jne 0x4000a12995
+_______________________
+LOOP 0x4000a1281d"]
+	1690 -> 1691
+	1690 [label="0x4000a1295c
+_______________________
+_______________________
+subl $1, %edx
+cmpl %edx, -0x44(%rbp)
+jb 0x4000a12854
+_______________________
+LOOP 0x4000a1281d"]
+	1691 -> 1692
+	1691 [label="0x4000a12968
+_______________________
+_______________________
+jmp 0x4000a127f0
+_______________________
+LOOP 0x4000a1281d"]
+	1692 -> 1693
+	1692 -> 1694
+	1692 [label="0x4000a127f0
+_______________________
+_______________________
+movl %r14d, %ebx
+cmpq %rbx, -0x38(%rbp)
+movl %r14d, -0x44(%rbp)
+movq %rbx, %r8
+je 0x4000a12938
+_______________________
+LOOP 0x4000a1281d"]
+	1693 -> 1685
+	1693 [label="0x4000a12804
+_______________________
+_______________________
+movq -0x38(%rbp), %rdx
+leaq (%r15, %r8, 2), %rdi
+xorl %esi, %esi
+addl $1, %r14d
+subq %r8, %rdx
+addq %rdx, %rdx
+callq 0x4000a1ec80
+_______________________
+LOOP 0x4000a1281d
+_______________________
+CALL 0x4000a1ec80"]
+	1694 [label="0x4000a12938
+_______________________
+_______________________
+movq -0x88(%rbp), %rsp
+leaq -0x28(%rbp), %rsp
+popq %rbx
+popq %r12
+popq %r13
+popq %r14
+popq %r15
+popq %rbp
+retq "]
+}

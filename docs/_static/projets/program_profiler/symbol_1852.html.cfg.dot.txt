@@ -1,0 +1,139 @@
+digraph {
+	node [shape=box]
+	1216 -> 1217
+	1216 [label="0x4000c61ea0
+_______________________
+_______________________
+pushq %r15
+pushq %r14
+pushq %r13
+pushq %r12
+pushq %rbp
+pushq %rbx
+subq $0x18, %rsp
+movq 0x37cfb3(%rip), %r14
+movl 0x70(%r14), %eax
+cmpl $1, %eax
+je 0x4000c61eec"]
+	1217 -> 1218
+	1217 [label="0x4000c61ebe
+_______________________
+_______________________
+cmpl $2, %eax
+je 0x4000c62072"]
+	1218 -> 1225
+	1218 [label="0x4000c62072
+_______________________
+_______________________
+movl $0xbc, %edi
+callq 0x4000cdca80
+_______________________
+CALL 0x4000cdca80"]
+	1225 -> 1227
+	1225 [label="0x4000c6207c
+_______________________
+_______________________
+movl $0xbf, %edi
+movq %rax, %r12
+callq 0x4000cdca80
+_______________________
+CALL 0x4000cdca80"]
+	1227 -> 1229
+	1227 [label="0x4000c62089
+_______________________
+_______________________
+movl $0xc2, %edi
+movq %rax, %rbp
+callq 0x4000cdca80
+_______________________
+CALL 0x4000cdca80"]
+	1229 -> 1230
+	1229 [label="0x4000c62096
+_______________________
+_______________________
+movq %rax, %rdi
+movl $0x80000000, %eax
+cpuid 
+testq %rdi, %rdi
+movl %eax, %esi
+jle 0x4000c620cc"]
+	1230 -> 1231
+	1230 [label="0x4000c620a7
+_______________________
+_______________________
+cmpl $0x80000007, %eax
+ja 0x4000c620f3"]
+	1231 -> 1232
+	1231 [label="0x4000c620f3
+_______________________
+_______________________
+movl $0x80000008, %eax
+cpuid 
+shrl $0xc, %ecx
+movl %eax, %esi
+movl $1, %eax
+andl $0xf, %ecx
+shll %cl, %eax
+movl %eax, %ecx
+movq %rdi, %rax
+cqto 
+idivq %rcx
+movq %rax, %rdi
+jmp 0x4000c620c9"]
+	1232 -> 1233
+	1232 [label="0x4000c620c9
+_______________________
+_______________________
+addq %rdi, %rbp
+cmpl $0x80000000, %esi
+jbe 0x4000c62009"]
+	1233 -> 1234
+	1233 [label="0x4000c62009
+_______________________
+_______________________
+testq %r12, %r12
+jle 0x4000c62039"]
+	1234 -> 1235
+	1234 [label="0x4000c6200e
+_______________________
+_______________________
+movq %r12, %rax
+movq %r12, 0x37d1c0(%rip)
+xorb %r12b, %r12b
+sarq $1, %rax
+movq %r12, 0x37d1c3(%rip)
+movq %rax, 0x37d1b4(%rip)
+movq %r12, %rax
+sarq $1, %rax
+movq %rax, 0x37d1b7(%rip)
+testq %rbp, %rbp
+jle 0x4000c61ec7"]
+	1235 -> 1236
+	1235 [label="0x4000c62042
+_______________________
+_______________________
+movq %rbp, %rax
+movq %rbp, 0x37d16c(%rip)
+xorb %bpl, %bpl
+sarq $1, %rax
+movq %rbp, 0x37d16f(%rip)
+movq %rax, 0x37d160(%rip)
+movq %rbp, %rax
+sarq $1, %rax
+movq %rax, 0x37d163(%rip)
+jmp 0x4000c61ece"]
+	1236 [label="0x4000c61ece
+_______________________
+_______________________
+leaq (%rbp, %rbp, 2), %rax
+addq %rax, %rax
+movq %rax, 0x3825ab(%rip)
+addq $0x18, %rsp
+popq %rbx
+popq %rbp
+popq %r12
+popq %r13
+popq %r14
+popq %r15
+retq "]
+}
