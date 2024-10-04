@@ -1,0 +1,27 @@
+digraph {
+	node [shape=box]
+	806 -> 868
+	806 [label="0x4000a1b4b0
+_______________________
+_______________________
+pushq %rbp
+pushq %rbx
+subq $8, %rsp
+movq 0x20bc0b(%rip), %rbp
+movq 0x20bbfc(%rip), %rbx
+movq $0, 0x20bbf9(%rip)
+movq %rdi, 0x20bbea(%rip)
+movq %rdx, %rdi
+callq *%rsi
+_______________________
+CALL 0x4000a04810"]
+	868 [label="0x4000a1b4db
+_______________________
+_______________________
+movq %rbp, 0x20bbe6(%rip)
+movq %rbx, 0x20bbd7(%rip)
+addq $8, %rsp
+popq %rbx
+popq %rbp
+retq "]
+}

@@ -1,0 +1,224 @@
+digraph {
+	node [shape=box]
+	1417 -> 1418
+	1417 [label="0x4000cbc670
+_______________________
+_______________________
+pushq %r15
+pushq %r14
+pushq %r13
+pushq %r12
+pushq %rbp
+pushq %rbx
+subq $0x68, %rsp
+cmpq $0xbf, %rsi
+ja 0x4000cbce0c"]
+	1418 -> 1419
+	1418 [label="0x4000cbc688
+_______________________
+_______________________
+movq %rsi, %rax
+movq %rsi, 0x10(%rsp)
+movq %rdi, %r15
+addq $0x17, %rax
+movq %rax, %r9
+andq $0xfffffff0, %r9
+cmpq $0x20, %rax
+movl $0x20, %eax
+cmovaeq %r9, %rax
+xorl %esi, %esi
+testq %rdi, %rdi
+movq %rax, %r12
+je 0x4000cbce25"]
+	1419 -> 1420
+	1419 [label="0x4000cbc6b9
+_______________________
+_______________________
+cmpq 0x325110(%rip), %rax
+ja 0x4000cbc72b"]
+	1420 -> 1421
+	1420 [label="0x4000cbc72b
+_______________________
+_______________________
+cmpq $0x3ff, %r12
+ja 0x4000cbc792"]
+	1421 -> 1422
+	1421 [label="0x4000cbc792
+_______________________
+_______________________
+movq %r12, %rbp
+shrq $6, %rbp
+cmpq $0x30, %rbp
+jbe 0x4000cbce00"]
+	1422 -> 1423
+	1422 [label="0x4000cbce00
+_______________________
+_______________________
+leal 0x30(%rbp), %eax
+movl %eax, 8(%rsp)
+jmp 0x4000cbc7bb"]
+	1423 -> 1424
+	1423 [label="0x4000cbc7bb
+_______________________
+_______________________
+testb $1, 4(%r15)
+jne 0x4000cbc7ca"]
+	1424 -> 1431
+	1424 [label="0x4000cbc7c2
+_______________________
+_______________________
+movq %r15, %rdi
+callq 0x4000cbab00
+_______________________
+CALL 0x4000cbab00"]
+	1431 -> 1432
+	1431 [label="0x4000cbc7ca
+_______________________
+_______________________
+movq %r12, %rax
+movq %r12, %rbx
+movq %r12, %rcx
+shrq $6, %rax
+movq %r12, %rdi
+movq %r12, %rsi
+movq %rax, 0x20(%rsp)
+addl $0x30, %eax
+shrq $9, %rbx
+movl %eax, 0x2c(%rsp)
+movl %r12d, %eax
+shrq $0xc, %rcx
+shrl $4, %eax
+shrq $0xf, %rdi
+shrq $0x12, %rsi
+movl %eax, 0x28(%rsp)
+leaq 0x20(%r12), %rax
+movq %rbx, 0x30(%rsp)
+movq %rcx, 0x38(%rsp)
+movq %rdi, 0x48(%rsp)
+addl $0x6e, %ecx
+movq %rsi, 0x50(%rsp)
+addl $0x77, %edi
+addl $0x7c, %esi
+addl $0x5b, %ebx
+leaq 0x58(%r15), %r13
+movl %esi, 0x5c(%rsp)
+movl %edi, 0x58(%rsp)
+movl %ecx, 0x44(%rsp)
+movl %ebx, 0x40(%rsp)"]
+	1432 -> 1433
+	1432 [label="0x4000cbc83c
+_______________________
+_______________________
+movq %rax, 0x18(%rsp)
+movl $0x2710, %ebp
+jmp 0x4000cbc896"]
+	1433 -> 1434
+	1433 [label="0x4000cbc896
+_______________________
+_______________________
+movq 0x70(%r15), %r14
+cmpq %r13, %r14
+je 0x4000cbcba3"]
+	1434 -> 1435
+	1434 [label="0x4000cbcba3
+_______________________
+_______________________
+cmpq $0x3ff, %r12
+ja 0x4000cbcd26"]
+	1435 -> 1436
+	1435 [label="0x4000cbcd26
+_______________________
+_______________________
+movl 8(%rsp), %eax
+addl $0x7fffffff, %eax
+addl %eax, %eax
+leaq 0x68(%r15, %rax, 8), %rdx
+movq (%rdx), %rax
+leaq -0x10(%rdx), %rcx
+cmpq %rcx, %rax
+je 0x4000cbcbb0"]
+	1436 -> 1437
+	1436 [label="0x4000cbcbb0
+_______________________
+_______________________
+movl 8(%rsp), %eax
+leal 1(%rax), %ecx
+addl %eax, %eax
+leaq 0x58(%r15, %rax, 8), %rdx
+movl $1, %eax
+movl %ecx, %edi
+shll %cl, %eax
+shrl $5, %edi
+movl %edi, %r8d
+movl 0x858(%r15, %r8, 4), %esi
+cmpl %esi, %eax
+ja 0x4000cbcc2b"]
+	1437 -> 1438
+	1437 -> 1439
+	1437 [label="0x4000cbcc2b
+_______________________
+_______________________
+addl $1, %edi
+cmpl $4, %edi
+jne 0x4000cbcc18"]
+	1438 -> 1437
+	1438 [label="0x4000cbcc18
+_______________________
+_______________________
+movl %edi, %r8d
+movl 0x858(%r15, %r8, 4), %esi
+testl %esi, %esi
+jne 0x4000cbcce0
+_______________________
+LOOP 0x4000cbcc2b"]
+	1439 -> 1440
+	1439 [label="0x4000cbcc33
+_______________________
+_______________________
+movq 0x58(%r15), %r14
+movq 8(%r14), %rax
+andq $0xfffffff8, %rax
+cmpq 0x18(%rsp), %rax
+jae 0x4000cbd021"]
+	1440 -> 1441
+	1440 [label="0x4000cbcc4a
+_______________________
+_______________________
+testb $1, 4(%r15)
+jne 0x4000cbce22"]
+	1441 -> 1492
+	1441 [label="0x4000cbce22
+_______________________
+_______________________
+movq %r15, %rsi
+movq %r12, %rdi
+callq 0x4000cbbd90
+_______________________
+CALL 0x4000cbbd90"]
+	1492 -> 1493
+	1492 [label="0x4000cbce2d
+_______________________
+_______________________
+testq %rax, %rax
+movq %rax, %r14
+je 0x4000cbce61"]
+	1493 -> 1494
+	1493 [label="0x4000cbce35
+_______________________
+_______________________
+movl 0x324991(%rip), %eax
+testl %eax, %eax
+je 0x4000cbc986"]
+	1494 [label="0x4000cbc986
+_______________________
+_______________________
+addq $0x68, %rsp
+movq %r14, %rax
+popq %rbx
+popq %rbp
+popq %r12
+popq %r13
+popq %r14
+popq %r15
+retq "]
+}

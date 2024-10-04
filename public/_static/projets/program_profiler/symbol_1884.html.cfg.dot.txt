@@ -1,0 +1,87 @@
+digraph {
+	node [shape=box]
+	1773 -> 1774
+	1773 [label="0x4000cb8610
+_______________________
+_______________________
+pushq %r13
+pushq %r12
+leaq 0x32404d(%rip), %rax
+pushq %rbp
+pushq %rbx
+movq %rdx, %rbp
+leaq 0x3232d9(%rip), %rdx
+movq %rdi, %rbx
+movq %rsi, %r13
+subq $8, %rsp
+movq 0xd8(%rdi), %r12
+subq %rdx, %rax
+movq %r12, %rcx
+subq %rdx, %rcx
+cmpq %rcx, %rax
+jbe 0x4000cb8720"]
+	1774 -> 1778
+	1774 [label="0x4000cb864a
+_______________________
+_______________________
+movq %rbx, %rdi
+callq *0x60(%r12)
+_______________________
+CALL _IO_file_sync"]
+	1778 -> 1779
+	1778 [label="0x4000cb8652
+_______________________
+_______________________
+cmpl $0xff, %eax
+je 0x4000cb8730"]
+	1779 -> 1780
+	1779 [label="0x4000cb865b
+_______________________
+_______________________
+movl (%rbx), %edx
+testq %r13, %r13
+movl %edx, %eax
+je 0x4000cb86d0"]
+	1780 -> 1781
+	1780 [label="0x4000cb86d0
+_______________________
+_______________________
+movq 0x38(%rbx), %rdi
+orl $2, %eax
+leaq 0x84(%rbx), %rbp
+movl %eax, (%rbx)
+leaq 0x83(%rbx), %r12
+testq %rdi, %rdi
+je 0x4000cb86f1"]
+	1781 -> 1782
+	1781 [label="0x4000cb86ec
+_______________________
+_______________________
+andl $1, %edx
+je 0x4000cb8710"]
+	1782 -> 1783
+	1782 [label="0x4000cb86f1
+_______________________
+_______________________
+orl $1, %eax
+movq %r12, 0x38(%rbx)
+movq %rbp, 0x40(%rbx)
+movl %eax, (%rbx)
+jmp 0x4000cb8690"]
+	1783 [label="0x4000cb8690
+_______________________
+_______________________
+movq $0, 0x30(%rbx)
+movq $0, 0x28(%rbx)
+movq %rbx, %rax
+movq $0, 0x20(%rbx)
+movq $0, 0x10(%rbx)
+movq $0, 8(%rbx)
+movq $0, 0x18(%rbx)
+addq $8, %rsp
+popq %rbx
+popq %rbp
+popq %r12
+popq %r13
+retq "]
+}
