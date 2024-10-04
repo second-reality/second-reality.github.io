@@ -50,6 +50,7 @@ html_theme_options = {
   "search_bar_text": "Search this site...",
   "show_prev_next": False,
 }
+html_show_sourcelink = False
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
