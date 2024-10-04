@@ -3,7 +3,7 @@
 set -euo pipefail
 
 script_dir=$(dirname $(readlink -f $0))
-out_folder="$script_dir/public/"
+out_folder="$script_dir/docs/"
 mkdir -p $out_folder
 
 sphinx_opt="-W -n -j auto" # warn, report missing ref, parallel
