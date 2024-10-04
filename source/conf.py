@@ -18,7 +18,7 @@
 # -- Project information -----------------------------------------------------
 
 project = 'Second Reality'
-copyright = '2021, Pierrick Bouvier'
+copyright = '2024, Pierrick Bouvier'
 author = 'Pierrick Bouvier'
 
 
