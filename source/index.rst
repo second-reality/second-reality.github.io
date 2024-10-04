@@ -9,7 +9,7 @@ Présentation
 ------------
 
 Je suis actuellement Ingénieur Logiciel chez `Linaro <https://www.linaro.org>`_
-sur `Windows on Arm <https://www.linaro.org/windows-on-arm/>`_
+sur `QEMU <https://www.qemu.org/>`_
 (`@pbo-linaro <https://github.com/pbo-linaro/>`_).
 
 ----------
